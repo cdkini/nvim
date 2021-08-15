@@ -17,4 +17,4 @@ set termguicolors
 " let g:everforest_better_performance = 1
 " colorscheme everforest
 
-colorscheme base16-gruvbox-dark-soft
+colorscheme base16-brushtrees-dark
