@@ -22,7 +22,7 @@
   set formatoptions-=cro                    " Stop newline continuation of comments
   set clipboard=unnamedplus                 " Copy paste between vim and everything else
   set incsearch                             " Highlights search results as a search query is typed
-  set colorcolumn=80                        " Sets ruler at 120 chars
+  set colorcolumn=88                        " Sets ruler at 120 chars
   set bg=dark                               " Color scheme
   set nohlsearch                            " Remove highlighting after search
   set scrolloff=10                          " Improved view while scrolling
