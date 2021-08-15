@@ -48,6 +48,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'tpope/vim-eunuch'                                     " UNIX file operations
         Plug 'tpope/vim-repeat'                                     " Improved . support
         Plug 'tpope/vim-surround'                                   " Surround editing
+        Plug 'kshenoy/vim-signature'                                " Marks in gutter
 
         Plug 'TimUntersberger/neogit', { 'on': 'Neogit' }           " Magit                   [plugins/code/neogit.vim]
         Plug 'sindrets/diffview.nvim'                               " Better git diffs
