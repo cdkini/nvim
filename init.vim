@@ -49,7 +49,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'tpope/vim-repeat'                                     " Improved . support
         Plug 'tpope/vim-surround'                                   " Surround editing
 
-        Plug 'TimUntersberger/neogit'                               " Magit                   [plugins/code/neogit.vim]
+        Plug 'TimUntersberger/neogit', { 'on': 'Neogit' }           " Magit                   [plugins/code/neogit.vim]
         Plug 'sindrets/diffview.nvim'                               " Better git diffs
         Plug 'ruifm/gitlinker.nvim'                                 " Yank GitHub url
 
@@ -80,7 +80,6 @@ call plug#end()
     source $HOME/.config/nvim/settings/plugins/code/lspconfig.vim
     source $HOME/.config/nvim/settings/plugins/code/nvim-tree.vim
     source $HOME/.config/nvim/settings/plugins/code/undotree.vim
-    source $HOME/.config/nvim/settings/plugins/code/neogit.vim
 
   " MISC:
     source $HOME/.config/nvim/settings/plugins/misc/comfortable-motion.vim
