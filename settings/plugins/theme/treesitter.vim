@@ -1,0 +1,20 @@
+" configure treesitter
+:lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = {"bash", "python", "yaml"}, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+    disable = { "c", "rust" },  -- list of language that will be disabled
+  },
+}
+EOF
+
+syntax enable
+set termguicolors
+
+" let g:everforest_background = 'soft'
+" let g:everforest_enable_italic = 1
+" let g:everforest_better_performance = 1
+" colorscheme everforest
+
+colorscheme base16-gruvbox-dark-soft
