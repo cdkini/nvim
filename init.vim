@@ -48,9 +48,10 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'tpope/vim-eunuch'                                     " UNIX file operations
         Plug 'tpope/vim-repeat'                                     " Improved . support
         Plug 'tpope/vim-surround'                                   " Surround editing
+
         Plug 'TimUntersberger/neogit'                               " Magit                   [plugins/code/neogit.vim]
-        Plug 'sindrets/diffview.nvim'
-        Plug 'ruifm/gitlinker.nvim'
+        Plug 'sindrets/diffview.nvim'                               " Better git diffs
+        Plug 'ruifm/gitlinker.nvim'                                 " Yank GitHub url
 
     " MISC:
         Plug 'dstein64/nvim-scrollview'
