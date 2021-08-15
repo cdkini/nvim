@@ -1,6 +1,6 @@
 " OPTIONS:
 " {{{
-  syntax enable
+  " syntax enable
   set splitbelow                            " Horizontal splits will automatically be below
   set noerrorbells                          " No annoying noises
   set cmdheight=1                           " Give more space for displaying messages

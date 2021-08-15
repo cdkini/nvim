@@ -55,18 +55,16 @@ let g:which_key_map.b = {
 " g is for git
 let g:which_key_map.g = {
       \ 'name' : '+git' ,
-      \ 'b':  ['<cmd>lua require"gitsigns".blame_line()<CR>'                        , 'blame hunk'],
-      \ 'B':  [':Gblame'                                                            , 'blame file'],
-      \ 'c':  [':Gcommit'                                                           , 'commit'],
-      \ 'g':  [':G'                                                                 , 'status'],
-      \ 'h':  [':Gbrowse'                                                           , 'github'],
-      \ 'l':  [':Glog -- %'                                                         , 'log file'],
-      \ 'L':  [':Glog'                                                              , 'log all'],
-      \ 'p':  ['<cmd>lua require"gitsigns".preview_hunk<CR>'                        , 'preview hunk'],
-      \ 'r':  ['<cmd>lua require"gitsigns".reset_hunk()'                            , 'reset hunk'],
-      \ 'R':  ['<cmd>lua require"gitsigns".reset_buffer()'                          , 'reset file'],
-      \ 's':  ['<cmd>lua require"gitsigns".stage_hunk()<CR>'                        , 'stage hunk'],
-      \ 'u':  ['<cmd>lua require"gitsigns".undo_stage_hunk()<CR>'                   , 'undo stage hunk'],
+      \ 'b':  ['<cmd>lua require"gitsigns".blame_line()<CR>'                        , 'blame'],
+      \ 'c':  [':Neogit commit'                                                     , 'commit'],
+      \ 'g':  [':Neogit'                                                            , 'status'],
+      \ 'l':  [':Neogit log'                                                        , 'log'],
+      \ 'y':  ['<cmd>lua require."gitlinker".get_buf_range_url("n")'                , 'yank url'],
+      \ 'p':  ['<cmd>lua require"gitsigns".preview_hunk<CR>'                        , 'which_key_ignore'],
+      \ 'r':  ['<cmd>lua require"gitsigns".reset_hunk()'                            , 'which_key_ignore'],
+      \ 'R':  ['<cmd>lua require"gitsigns".reset_buffer()'                          , 'which_key_ignore'],
+      \ 's':  ['<cmd>lua require"gitsigns".stage_hunk()<CR>'                        , 'which_key_ignore'],
+      \ 'u':  ['<cmd>lua require"gitsigns".undo_stage_hunk()<CR>'                   , 'which_key_ignore'],
       \ }
 
 " s is for search 

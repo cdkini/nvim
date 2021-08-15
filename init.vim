@@ -46,12 +46,14 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'romgrk/barbar.nvim'                                   " Improved buffers        [plugins/code/barbar.vim]
         Plug 'tpope/vim-commentary'                                 " Comment out
         Plug 'tpope/vim-eunuch'                                     " UNIX file operations
-        Plug 'tpope/vim-fugitive'                                   " Git commands
         Plug 'tpope/vim-repeat'                                     " Improved . support
-        Plug 'tpope/vim-rhubarb'                                    " Go to GitHub
         Plug 'tpope/vim-surround'                                   " Surround editing
+        Plug 'TimUntersberger/neogit'                               " Magit                   [plugins/code/neogit.vim]
+        Plug 'sindrets/diffview.nvim'
+        Plug 'ruifm/gitlinker.nvim'
 
     " MISC:
+        Plug 'dstein64/nvim-scrollview'
         Plug 'liuchengxu/vim-which-key'                             " Key previews            [plugins/misc/whichkey.vim]
         Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
         Plug 'machakann/vim-highlightedyank'                        " Highlight yanks         [plugins/misc/highlightedyank.vim]
@@ -78,10 +80,11 @@ call plug#end()
     source $HOME/.config/nvim/settings/plugins/code/lspconfig.vim
     source $HOME/.config/nvim/settings/plugins/code/nvim-tree.vim
     source $HOME/.config/nvim/settings/plugins/code/undotree.vim
-    source $HOME/.config/nvim/settings/plugins/misc/comfortable-motion.vim
-    source $HOME/.config/nvim/settings/plugins/misc/highlightedyank.vim
+    source $HOME/.config/nvim/settings/plugins/code/neogit.vim
 
   " MISC:
+    source $HOME/.config/nvim/settings/plugins/misc/comfortable-motion.vim
+    source $HOME/.config/nvim/settings/plugins/misc/highlightedyank.vim
     source $HOME/.config/nvim/settings/plugins/misc/comfortable-motion.vim
     source $HOME/.config/nvim/settings/plugins/misc/highlightedyank.vim
     source $HOME/.config/nvim/settings/plugins/misc/maximizer.vim
