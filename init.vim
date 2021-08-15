@@ -54,7 +54,6 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'ruifm/gitlinker.nvim'                                 " Yank GitHub url
 
     " MISC:
-        Plug 'dstein64/nvim-scrollview'
         Plug 'liuchengxu/vim-which-key'                             " Key previews            [plugins/misc/whichkey.vim]
         Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
         Plug 'machakann/vim-highlightedyank'                        " Highlight yanks         [plugins/misc/highlightedyank.vim]
