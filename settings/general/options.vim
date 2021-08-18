@@ -31,4 +31,5 @@
   set shortmess+=c                          " nvim LSP
   set lazyredraw
   set title
+  set autowrite
 " }}}

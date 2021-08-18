@@ -17,4 +17,5 @@ set termguicolors
 " let g:everforest_better_performance = 1
 " colorscheme everforest
 
-colorscheme base16-gruvbox-dark-soft
+colorscheme nightfox
+let g:nightfox_style = "nordfox" 
