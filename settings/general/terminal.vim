@@ -1,8 +1,7 @@
 " TERMINAL SETTINGS:
 " {{{
   " To map <Esc> to exit terminal-mode
-  tnoremap jk <C-\><C-n>
-  tnoremap kj <C-\><C-n>
+  tnoremap <Esc> <C-\><C-n>
 
   " Something
   let g:term_buf=0
