@@ -19,4 +19,7 @@
   " cd to current buffer
   nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
+  " Treat Y like C or D (goes to EOL)
+  nnoremap Y y$
+
 " }}}
