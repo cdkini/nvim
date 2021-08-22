@@ -51,11 +51,14 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'kshenoy/vim-signature'                                " Marks in gutter
         Plug 'tversteeg/registers.nvim'
 
-        Plug 'TimUntersberger/neogit'                               " Magit                   [plugins/code/neogit.vim]
+        " Git
+        Plug 'TimUntersberger/neogit', { 'on': 'Neogit' }           " Magit                   [plugins/code/neogit.vim]
         Plug 'sindrets/diffview.nvim'                               " Better git diffs
         Plug 'ruifm/gitlinker.nvim'                                 " Yank GitHub url
-        Plug 'bobrown101/git-blame.nvim'                            " Blame file
+        Plug 'bobrown101/git-blame.nvim'                            " Blame file              [plugins/code/blame.vim]
 
+        " Plug 'mfussenegger/nvim-dap'
+        " Plug 'mfussenegger/nvim-dap-python'
 
     " MISC:
         Plug 'liuchengxu/vim-which-key'                             " Key previews            [plugins/misc/whichkey.vim]
@@ -84,7 +87,6 @@ call plug#end()
     source $HOME/.config/nvim/settings/plugins/code/lspconfig.vim
     source $HOME/.config/nvim/settings/plugins/code/nvim-tree.vim
     source $HOME/.config/nvim/settings/plugins/code/undotree.vim
-    source $HOME/.config/nvim/settings/plugins/code/neogit.vim
 
   " MISC:
     source $HOME/.config/nvim/settings/plugins/misc/comfortable-motion.vim
