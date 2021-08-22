@@ -55,7 +55,8 @@ let g:which_key_map.b = {
 " g is for git
 let g:which_key_map.g = {
       \ 'name' : '+git' ,
-      \ 'b':  ['<cmd>lua require"gitsigns".blame_line()<CR>'                        , 'blame'],
+      \ 'b':  ['<cmd>lua require"gitsigns".blame_line()<CR>'                        , 'blame line'],
+      \ 'B':  ['<cmd>lua require("git_blame)".run()<CR>'                              , 'blame file'],
       \ 'c':  [':Neogit commit'                                                     , 'commit'],
       \ 'g':  [':Neogit'                                                            , 'status'],
       \ 'l':  [':Neogit log'                                                        , 'log'],
