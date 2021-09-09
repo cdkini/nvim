@@ -44,6 +44,8 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'nvim-lua/plenary.nvim'                                " Gitsigns helper funcs
         Plug 'kyazdani42/nvim-tree.lua'                             " File explorer           [plugins/code/nvim-tree.vim]
         Plug 'romgrk/barbar.nvim'                                   " Improved buffers        [plugins/code/barbar.vim]
+        Plug 'tpope/vim-fugitive'                                   " Git goodness
+        Plug 'tpope/vim-rhubarb'                                    " GitHub goodness
         Plug 'tpope/vim-commentary'                                 " Comment out
         Plug 'tpope/vim-eunuch'                                     " UNIX file operations
         Plug 'tpope/vim-repeat'                                     " Improved . support
@@ -67,21 +69,21 @@ call plug#end()
 
 " PLUGIN SETTINGS:
   " THEME:
-    source $HOME/.config/nvim/settings/plugins/theme/galaxyline.vim
-    source $HOME/.config/nvim/settings/plugins/theme/treesitter.vim
+     source $HOME/.config/nvim/settings/plugins/theme/galaxyline.vim
+     source $HOME/.config/nvim/settings/plugins/theme/treesitter.vim
 
   " CODE:
-    source $HOME/.config/nvim/settings/plugins/code/barbar.vim
-    source $HOME/.config/nvim/settings/plugins/code/compe.vim
-    source $HOME/.config/nvim/settings/plugins/code/fzf.vim
-    source $HOME/.config/nvim/settings/plugins/code/gitsigns.vim
-    source $HOME/.config/nvim/settings/plugins/code/lspconfig.vim
-    source $HOME/.config/nvim/settings/plugins/code/nvim-tree.vim
-    source $HOME/.config/nvim/settings/plugins/code/undotree.vim
+     source $HOME/.config/nvim/settings/plugins/code/barbar.vim
+     source $HOME/.config/nvim/settings/plugins/code/compe.vim
+     source $HOME/.config/nvim/settings/plugins/code/fzf.vim
+     source $HOME/.config/nvim/settings/plugins/code/gitsigns.vim
+     source $HOME/.config/nvim/settings/plugins/code/lspconfig.vim
+     source $HOME/.config/nvim/settings/plugins/code/nvim-tree.vim
+     source $HOME/.config/nvim/settings/plugins/code/undotree.vim
 
   " MISC:
-    source $HOME/.config/nvim/settings/plugins/misc/comfortable-motion.vim
-    source $HOME/.config/nvim/settings/plugins/misc/highlightedyank.vim
-    source $HOME/.config/nvim/settings/plugins/misc/maximizer.vim
-    source $HOME/.config/nvim/settings/plugins/misc/startify.vim
-    source $HOME/.config/nvim/settings/plugins/misc/whichkey.vim
+     source $HOME/.config/nvim/settings/plugins/misc/comfortable-motion.vim
+     source $HOME/.config/nvim/settings/plugins/misc/highlightedyank.vim
+     source $HOME/.config/nvim/settings/plugins/misc/maximizer.vim
+     source $HOME/.config/nvim/settings/plugins/misc/startify.vim
+     source $HOME/.config/nvim/settings/plugins/misc/whichkey.vim
