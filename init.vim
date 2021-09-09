@@ -30,7 +30,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
     " THEME:
         Plug 'glepnir/galaxyline.nvim'                              " Lightweight statusline  [plugins/theme/galaxyline.vim]
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " v0.5.0 color support    [plugins/theme/treesitter.vim]
-        Plug 'RRethy/nvim-base16'
+        Plug 'EdenEast/nightfox.nvim'
 
     " CODE:
         Plug 'ahmedkhalf/lsp-rooter.nvim'                           " Auto chdir using LSP
@@ -50,6 +50,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'tpope/vim-repeat'                                     " Improved . support
         Plug 'tpope/vim-rhubarb'                                    " Go to GitHub
         Plug 'tpope/vim-surround'                                   " Surround editing
+        Plug 'kshenoy/vim-signature'                                " Marks in gutter
 
     " MISC:
         Plug 'liuchengxu/vim-which-key'                             " Key previews            [plugins/misc/whichkey.vim]

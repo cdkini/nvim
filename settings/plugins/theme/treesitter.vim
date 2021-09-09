@@ -7,14 +7,11 @@ require'nvim-treesitter.configs'.setup {
     disable = { "c", "rust" },  -- list of language that will be disabled
   },
 }
+
+local nightfox = require('nightfox')
+nightfox.setup({fox="nordfox"})
+nightfox.load()
 EOF
 
 syntax enable
 set termguicolors
-
-" let g:everforest_background = 'soft'
-" let g:everforest_enable_italic = 1
-" let g:everforest_better_performance = 1
-" colorscheme everforest
-
-colorscheme base16-gruvbox-dark-soft
