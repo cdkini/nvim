@@ -57,9 +57,6 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'ruifm/gitlinker.nvim'                                 " Yank GitHub url
         Plug 'bobrown101/git-blame.nvim'                            " Blame file              [plugins/code/blame.vim]
 
-        " Plug 'mfussenegger/nvim-dap'
-        " Plug 'mfussenegger/nvim-dap-python'
-
     " MISC:
         Plug 'liuchengxu/vim-which-key'                             " Key previews            [plugins/misc/whichkey.vim]
         Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
