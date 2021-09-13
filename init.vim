@@ -2,7 +2,7 @@ let mapleader=" "
 set nocompatible
 
 " Source this file upon startup
-autocmd VimEnter * source $HOME/.config/nvim/init.vim
+" autocmd VimEnter * source $HOME/.config/nvim/init.vim
 
 " =====================================================================================================================
 "                                                       DEFAULTS
@@ -28,7 +28,7 @@ autocmd VimEnter * source $HOME/.config/nvim/init.vim
 call plug#begin('$HOME/.config/nvim/plugged')
 
     " THEME:
-        Plug 'glepnir/galaxyline.nvim'                              " Lightweight statusline  [plugins/theme/galaxyline.vim]
+        Plug 'hoob3rt/lualine.nvim'                                 " Lightweight statusline  [plugins/theme/lualine.vim]
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " v0.5.0 color support    [plugins/theme/treesitter.vim]
         Plug 'EdenEast/nightfox.nvim'
 
@@ -51,7 +51,10 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'tpope/vim-repeat'                                     " Improved . support
         Plug 'tpope/vim-surround'                                   " Surround editing
         Plug 'kshenoy/vim-signature'                                " Marks in gutter
-        Plug 'tversteeg/registers.nvim'
+        Plug 'tversteeg/registers.nvim'                             " Peek registers
+
+        Plug 'mfussenegger/nvim-dap'
+        Plug 'mfussenegger/nvim-dap-python'
 
     " MISC:
         Plug 'liuchengxu/vim-which-key'                             " Key previews            [plugins/misc/whichkey.vim]
@@ -69,8 +72,8 @@ call plug#end()
 
 " PLUGIN SETTINGS:
   " THEME:
-     source $HOME/.config/nvim/settings/plugins/theme/galaxyline.vim
      source $HOME/.config/nvim/settings/plugins/theme/treesitter.vim
+     source $HOME/.config/nvim/settings/plugins/theme/lualine.vim
 
   " CODE:
      source $HOME/.config/nvim/settings/plugins/code/barbar.vim
@@ -80,6 +83,7 @@ call plug#end()
      source $HOME/.config/nvim/settings/plugins/code/lspconfig.vim
      source $HOME/.config/nvim/settings/plugins/code/nvim-tree.vim
      source $HOME/.config/nvim/settings/plugins/code/undotree.vim
+     source $HOME/.config/nvim/settings/plugins/code/nvim-dap.vim
 
   " MISC:
      source $HOME/.config/nvim/settings/plugins/misc/comfortable-motion.vim
