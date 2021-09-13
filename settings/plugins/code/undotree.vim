@@ -1,7 +1,7 @@
 " UNDOTREE:
 " {{{
   let g:undotree_WindowLayout=2
-  nnoremap <leader>tu :UndotreeToggle<CR>
+  nnoremap <leader>u :UndotreeToggle<CR>
 " }}}
 
 if has("persistent_undo")

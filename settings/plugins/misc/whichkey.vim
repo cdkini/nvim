@@ -25,9 +25,14 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
 
-let g:which_key_map[';'] = [ ':Startify'            , 'dashboard' ]
-let g:which_key_map['='] = [ '<C-w>='               , 'align splits' ]
-let g:which_key_map['z'] = [':MaximizerToggle'      , 'zoom in/out']
+let g:which_key_map[';'] = [ ':Startify'                                   , 'dashboard' ]
+let g:which_key_map['='] = [ '<C-w>='                                      , 'align splits' ]
+let g:which_key_map['z'] = [':MaximizerToggle'                             , 'zoom in/out']
+let g:which_key_map['d'] = [':TroubleToggle lsp_document_diagnostics'      , 'diagnostics']
+let g:which_key_map['t'] = [':call TermToggle(10)'                         , 'terminal']
+let g:which_key_map['u'] = [':UndoTreeToggle'                              , 'undotree']
+let g:which_key_map['e'] = [':NvimTreeToggle'                              , 'explorer']
+
 
 let g:which_key_map.h = 'which_key_ignore'
 let g:which_key_map.j = 'which_key_ignore'
@@ -86,15 +91,6 @@ let g:which_key_map.s = {
       \ 'l' : [':Lines'        , 'lines'] ,
       \ 'm' : [':Marks'        , 'marks'] ,
       \ 'p' : [':Rg'           , 'project'],
-      \ }
-
-" t is for toggle
-let g:which_key_map.t = {
-      \ 'name' : '+toggle' ,
-      \ 'd' : [':TroubleToggle lsp_document_diagnostics'                  , 'diagnostics'],
-      \ 't' : [':call TermToggle(10)'                                     , 'terminal'],
-      \ 'u' : [':UndoTreeToggle'                                          , 'undotree'],
-      \ 'e' : [':NvimTreeToggle'                                          , 'explorer'],
       \ }
 
 " v is for vim
