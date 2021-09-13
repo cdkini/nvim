@@ -5,10 +5,10 @@
   " inoremap kj <Esc>
 
   " Navigate and create splits
-  nnoremap <silent> <leader>h :call WinMove('h')<CR>
-  nnoremap <silent> <leader>j :call WinMove('j')<CR>
-  nnoremap <silent> <leader>k :call WinMove('k')<CR>
-  nnoremap <silent> <leader>l :call WinMove('l')<CR>
+  nnoremap <silent> <C-h> :call WinMove('h')<CR>
+  nnoremap <silent> <C-j> :call WinMove('j')<CR>
+  nnoremap <silent> <C-k> :call WinMove('k')<CR>
+  nnoremap <silent> <C-l> :call WinMove('l')<CR>
 
   " Source/open vimrc
   nnoremap <leader>vs :source $MYVIMRC<CR>

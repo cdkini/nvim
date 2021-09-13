@@ -55,6 +55,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
 
         Plug 'mfussenegger/nvim-dap'
         Plug 'mfussenegger/nvim-dap-python'
+        Plug 'rcarriga/nvim-dap-ui'
 
     " MISC:
         Plug 'liuchengxu/vim-which-key'                             " Key previews            [plugins/misc/whichkey.vim]
