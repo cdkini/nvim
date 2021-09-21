@@ -78,4 +78,6 @@
             }
         }
     }
+    
+    require'lspconfig'.tsserver.setup{}
 EOF
