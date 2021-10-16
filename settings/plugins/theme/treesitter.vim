@@ -8,10 +8,14 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
-local nightfox = require('nightfox')
-nightfox.setup({fox="nordfox"})
-nightfox.load()
+-- local nightfox = require('nightfox')
+-- nightfox.setup({fox="nordfox"})
+-- nightfox.load()
 EOF
 
 syntax enable
 set termguicolors
+
+let g:gruvbox_material_background = 'soft'
+colorscheme gruvbox-material
+
