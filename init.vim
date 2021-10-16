@@ -80,7 +80,6 @@ call plug#end()
      source $HOME/.config/nvim/settings/plugins/code/lspconfig.vim
      source $HOME/.config/nvim/settings/plugins/code/nvim-tree.vim
      source $HOME/.config/nvim/settings/plugins/code/undotree.vim
-     source $HOME/.config/nvim/settings/plugins/code/nvim-dap.vim
 
   " MISC:
      source $HOME/.config/nvim/settings/plugins/misc/comfortable-motion.vim
