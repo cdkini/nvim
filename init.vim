@@ -30,7 +30,6 @@ call plug#begin('$HOME/.config/nvim/plugged')
     " THEME:
         Plug 'hoob3rt/lualine.nvim'                                                     " Lightweight statusline  [plugins/theme/lualine.vim]
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}                     " v0.5.0 color support    [plugins/theme/treesitter.vim]
-        " Plug 'EdenEast/nightfox.nvim'
         Plug 'sainnhe/gruvbox-material'
 
     " CODE:
@@ -53,10 +52,6 @@ call plug#begin('$HOME/.config/nvim/plugged')
         Plug 'tpope/vim-surround'                                                       " Surround editing
         Plug 'kshenoy/vim-signature'                                                    " Marks in gutter
         Plug 'tversteeg/registers.nvim'                                                 " Peek registers
-
-        Plug 'mfussenegger/nvim-dap'
-        Plug 'mfussenegger/nvim-dap-python'
-        Plug 'rcarriga/nvim-dap-ui'
 
     " MISC:
         Plug 'liuchengxu/vim-which-key'                                                 " Key previews            [plugins/misc/whichkey.vim]

@@ -28,7 +28,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 let g:which_key_map[';'] = [ ':Startify'                                   , 'dashboard' ]
 let g:which_key_map['='] = [ '<C-w>='                                      , 'align splits' ]
 let g:which_key_map['z'] = [':MaximizerToggle'                             , 'zoom in/out']
-let g:which_key_map['D'] = [':TroubleToggle lsp_document_diagnostics'      , 'diagnostics']
+let g:which_key_map['d'] = [':TroubleToggle lsp_document_diagnostics'      , 'diagnostics']
 let g:which_key_map['t'] = [':call TermToggle(10)'                         , 'terminal']
 let g:which_key_map['u'] = [':UndoTreeToggle'                              , 'undotree']
 let g:which_key_map['e'] = [':NvimTreeToggle'                              , 'explorer']
@@ -102,19 +102,19 @@ let g:which_key_map.v = {
       \ 'c' : [':PlugClean'                             , 'clean'],
       \ }
 
-" d is for debug
-let g:which_key_map.d = {
-      \ 'name' : '+debug' ,
-      \ 'b' : [':lua require"dap".toggle_breakpoint()'                                                , 'breakpoint'],
-      \ 'k' : [':lua require"dap".step_out()'                                                         , 'step out'],
-      \ 'l' : [':lua require"dap".step_into()'                                                        , 'step into'],
-      \ 'j' : [':lua require"dap".step_over()'                                                        , 'step over'],
-      \ 'h' : [':lua require"dap".continue()'                                                         , 'continue'],
-      \ 'u' : [':lua require"dap".up()'                                                               , 'up'],
-      \ 'd' : [':lua require"dap".down()'                                                             , 'down'],
-      \ 'q' : [':lua require"dap".disconnect({ terminateDebuggee = true });require"dap".close()'      , 'quit'],
-      \ 't' : [':lua require("dap-python").test_method()'                                             , 'test'],
-      \ }
+" " d is for debug
+" let g:which_key_map.d = {
+"       \ 'name' : '+debug' ,
+"       \ 'b' : [':lua require"dap".toggle_breakpoint()'                                                , 'breakpoint'],
+"       \ 'k' : [':lua require"dap".step_out()'                                                         , 'step out'],
+"       \ 'l' : [':lua require"dap".step_into()'                                                        , 'step into'],
+"       \ 'j' : [':lua require"dap".step_over()'                                                        , 'step over'],
+"       \ 'h' : [':lua require"dap".continue()'                                                         , 'continue'],
+"       \ 'u' : [':lua require"dap".up()'                                                               , 'up'],
+"       \ 'd' : [':lua require"dap".down()'                                                             , 'down'],
+"       \ 'q' : [':lua require"dap".disconnect({ terminateDebuggee = true });require"dap".close()'      , 'quit'],
+"       \ 't' : [':lua require("dap-python").test_method()'                                             , 'test'],
+"       \ }
 
 " call which_key#register('<Space>', "g:which_key_map")
 autocmd! User vim-which-key call which_key#register('<Space>', 'g:which_key_map')
