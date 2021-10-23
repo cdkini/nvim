@@ -6,12 +6,20 @@ end
 
 return require('packer').startup(function(use)
   use { 
-    "nvim-lua/plenary.nvim",
+    'nvim-lua/plenary.nvim',
   }
   use {
-    "wbthomason/packer.nvim",
-    event = "VimEnter",
+    'wbthomason/packer.nvim',
+    event = 'VimEnter',
   }
+  use {
+    'Pocco81/Catppuccino.nvim',
+    after = 'packer.nvim',
+    config = function()
+        require('plugins.config.colors').setup()
+    end
+  }
+
 --  use 'ahmedkhalf/lsp-rooter.nvim'
 --  use 'akinsho/toggleterm.nvim'
 --  use 'chentau/marks.nvim'
@@ -38,7 +46,6 @@ return require('packer').startup(function(use)
 --  use 'ray-x/lsp_signature.nvim'
 --  use 'rcarriga/vim-ultest'
 --  use 'romgrk/barbar.nvim'
---  use 'sainnhe/gruvbox-material'
 --  use 'szw/vim-maximizer'
 --  use 'terrortylor/nvim-comment'
 --  use 'tpope/vim-eunuch'
@@ -47,7 +54,6 @@ return require('packer').startup(function(use)
 --  use 'tpope/vim-rhubarb'
 --  use 'tpope/vim-surround'
 --  use 'tversteeg/registers.nvim'
---  use 'wbthomason/packer.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
@@ -55,4 +61,3 @@ return require('packer').startup(function(use)
     require('packer').sync()
   end
 end)
-
