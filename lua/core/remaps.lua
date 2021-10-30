@@ -26,7 +26,8 @@ api.nvim_set_keymap('n', '<C-l>', ':call WinMove("l")<CR>', { noremap = true})
 api.nvim_set_keymap('n', '<leader>vs', ':luafile $MYVIMRC<CR>', { noremap = true})
 api.nvim_set_keymap('n', '<leader>ve', ':e $MYVIMRC<CR>', { noremap = true})
 api.nvim_set_keymap('n', '<leader>vi', ':PackerInstall<CR>', { noremap = true})
-api.nvim_set_keymap('n', '<leader>vc', ':PackerClean<CR>', { noremap = true})
+api.nvim_set_keymap('n', '<leader>vc', ':PackerCompile<CR>', { noremap = true})
+api.nvim_set_keymap('n', '<leader>vd', ':PackerClean<CR>', { noremap = true})
 api.nvim_set_keymap('n', '<leader>vu', ':PackerUpdate<CR>', { noremap = true})
 
 -- cd to current buffer

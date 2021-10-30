@@ -69,172 +69,67 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["Catppuccino.nvim"] = {
-    config = { "\27LJ\2\nC\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\26plugins.config.colors\frequire\0" },
-    load_after = {
-      ["packer.nvim"] = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/opt/Catppuccino.nvim"
-  },
-  ["barbar.nvim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/barbar.nvim"
-  },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/friendly-snippets"
-  },
-  ["fzf-lua"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/fzf-lua"
-  },
   ["gitsigns.nvim"] = {
+    config = { "\27LJ\2\n7\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\28plugins.config.gitsigns\frequire\0" },
     loaded = true,
     path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
-  ["lsp-rooter.nvim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/lsp-rooter.nvim"
-  },
-  ["lsp_signature.nvim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim"
-  },
-  ["lspkind-nvim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
-  },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/lualine.nvim"
-  },
-  ["marks.nvim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/marks.nvim"
-  },
-  ["neoscroll.nvim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
-  },
-  ["nvim-cmp"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/nvim-cmp"
-  },
-  ["nvim-comment"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/nvim-comment"
-  },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/nvim-dap"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
-  },
-  ["nvim-startup.lua"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/nvim-startup.lua"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
-  },
   ["nvim-treesitter"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\30plugins.config.treesitter\frequire\0" },
     loaded = true,
     path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
-  ["nvim-web-devicons"] = {
+  ["onenord.nvim"] = {
+    config = { "\27LJ\2\n:\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\31plugins.config.colorscheme\frequire\0" },
     loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
-  },
-  ["packer.nvim"] = {
-    after = { "Catppuccino.nvim" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/opt/packer.nvim"
+    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/onenord.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
-  ["registers.nvim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/registers.nvim"
-  },
   ["telescope.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\29plugins.config.telescope\frequire\0" },
     loaded = true,
     path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
-  ["toggleterm.nvim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/toggleterm.nvim"
-  },
-  ["trouble.nvim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/trouble.nvim"
-  },
-  undotree = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/undotree"
-  },
-  ["vim-eunuch"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/vim-eunuch"
-  },
   ["vim-fugitive"] = {
+    config = { "\27LJ\2\n7\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\28plugins.config.fugitive\frequire\0" },
     loaded = true,
     path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/vim-fugitive"
   },
-  ["vim-maximizer"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/vim-maximizer"
-  },
-  ["vim-repeat"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/vim-repeat"
-  },
-  ["vim-rhubarb"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
-  },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/vim-startify"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/vim-surround"
-  },
-  ["vim-ultest"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/vim-ultest"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/vim-vsnip"
-  },
-  ["vista.vim"] = {
-    loaded = true,
-    path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/vista.vim"
-  },
   ["which-key.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\29plugins.config.which-key\frequire\0" },
     loaded = true,
     path = "/Users/cdkini/.local/share/nvim/site/pack/packer/start/which-key.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Event lazy-loads
-time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'packer.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-time([[Defining lazy-load event autocommands]], false)
-vim.cmd("augroup END")
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\28plugins.config.gitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: which-key.nvim
+time([[Config for which-key.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\29plugins.config.which-key\frequire\0", "config", "which-key.nvim")
+time([[Config for which-key.nvim]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\30plugins.config.treesitter\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
+-- Config for: vim-fugitive
+time([[Config for vim-fugitive]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\28plugins.config.fugitive\frequire\0", "config", "vim-fugitive")
+time([[Config for vim-fugitive]], false)
+-- Config for: onenord.nvim
+time([[Config for onenord.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\31plugins.config.colorscheme\frequire\0", "config", "onenord.nvim")
+time([[Config for onenord.nvim]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\29plugins.config.telescope\frequire\0", "config", "telescope.nvim")
+time([[Config for telescope.nvim]], false)
 if should_profile then save_profiles() end
 
 end)

@@ -1,63 +1,71 @@
+local vim = vim
+
+local execute = vim.api.nvim_command
 local fn = vim.fn
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+
+-- ensure that packer is installed
+local install_path = fn.stdpath('data')..'/site/pack/packer/opt/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
+    execute 'packadd packer.nvim'
 end
 
-return require('packer').startup(function(use)
-  use { 
-    'nvim-lua/plenary.nvim',
-  }
+vim.cmd('packadd packer.nvim')
+
+local packer = require('packer')
+local util = require('packer.util')
+
+packer.init({
+  package_root = util.join_paths(vim.fn.stdpath('data'), 'site', 'pack')
+})
+
+--- startup and add configure plugins
+packer.startup(function()
+  local use = use
+  -- Colorscheme
   use {
-    'wbthomason/packer.nvim',
-    event = 'VimEnter',
-  }
-  use {
-    'Pocco81/Catppuccino.nvim',
-    after = 'packer.nvim',
+    'rmehri01/onenord.nvim',
     config = function()
-        require('plugins.config.colors').setup()
+      require('plugins.config.colorscheme')
     end
   }
-
---  use 'ahmedkhalf/lsp-rooter.nvim'
---  use 'akinsho/toggleterm.nvim'
---  use 'chentau/marks.nvim'
---  use 'folke/trouble.nvim'
---  use 'folke/which-key.nvim'
---  use 'henriquehbr/nvim-startup.lua'
---  use 'hoob3rt/lualine.nvim'
---  use 'hrsh7th/nvim-cmp'
---  use 'hrsh7th/vim-vsnip'
---  use 'ibhagwan/fzf-lua'
---  use 'karb94/neoscroll.nvim'
---  use 'kyazdani42/nvim-tree.lua'
---  use 'kyazdani42/nvim-web-devicons'
---  use 'lewis6991/gitsigns.nvim'
---  use 'liuchengxu/vista.vim'
---  use 'mbbill/undotree'
---  use 'mfussenegger/nvim-dap'
---  use 'mhinz/vim-startify'
---  use 'neovim/nvim-lspconfig'
---  use 'nvim-telescope/telescope.nvim'
---  use 'nvim-treesitter/nvim-treesitter'
---  use 'onsails/lspkind-nvim'
---  use 'rafamadriz/friendly-snippets'
---  use 'ray-x/lsp_signature.nvim'
---  use 'rcarriga/vim-ultest'
---  use 'romgrk/barbar.nvim'
---  use 'szw/vim-maximizer'
---  use 'terrortylor/nvim-comment'
---  use 'tpope/vim-eunuch'
---  use 'tpope/vim-fugitive'
---  use 'tpope/vim-repeat'
---  use 'tpope/vim-rhubarb'
---  use 'tpope/vim-surround'
---  use 'tversteeg/registers.nvim'
-
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if packer_bootstrap then
-    require('packer').sync()
+  -- Syntax highlighting
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+    config = function()
+      require('plugins.config.treesitter') 
+    end
+  }
+  -- Fuzzy finder
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} },
+    config = function()
+      require('plugins.config.telescope')
+    end
+  }
+  -- Git integration
+  use {
+    'tpope/vim-fugitive',
+    config = function()
+      require('plugins.config.fugitive')
+    end
+  }
+  -- Git gutter support
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} },
+    config = function()
+      require('plugins.config.gitsigns')
+    end
+  }
+  -- Key preview / reminder
+  use {
+    'folke/which-key.nvim',
+    config = function()
+      require('plugins.config.which-key')
+    end
+  }
   end
-end)
+)
