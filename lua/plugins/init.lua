@@ -115,12 +115,19 @@ packer.startup(function()
       require('plugins.config.marks')
     end
   }
+  use { -- Smooth scrolling
+    'karb94/neoscroll.nvim',
+    config = function()
+      require('plugins.config.neoscroll')
+    end
+  }
   use { -- Key preview / reminder
     'folke/which-key.nvim',
     config = function()
       require('plugins.config.which-key')
     end
   }
+  use 'lukas-reineke/indent-blankline.nvim' -- Indent markers
   use 'mhinz/vim-startify' -- Dashboard
   use 'tpope/vim-commentary' -- tpope the GOAT
   use 'tpope/vim-eunuch'
