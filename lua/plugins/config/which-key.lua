@@ -14,13 +14,25 @@ wk.setup({
     z = false,
     g = false,
   },
-  ignore_missing = false,
+  ignore_missing = true,
   layout = {
     align = "center",
   }
 })
 
 wk.register({
+  [';'] = 'Dashboard',
+  ['='] = 'Align splits',
+  b = {
+    name = 'Buffers',
+    b = 'Pick',
+    p = 'Previous',
+    n = 'Next',
+    d = 'Close',
+    ['/'] = 'Search',
+  },
+  d = 'Diagnostics',
+  e = 'Explorer',
   g = {
     name = 'Git',
     b = { 'Blame' },
@@ -37,6 +49,10 @@ wk.register({
   },
   s = {
     name = 'Search',
+    b = 'Buffers',
+    f = 'Files',
+    p = 'Project',
+    ['/'] = 'Current file',
   },
   v = {
     name = 'Vim',
