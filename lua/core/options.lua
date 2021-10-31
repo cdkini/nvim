@@ -2,7 +2,7 @@ local opt = vim.opt
 
 opt.splitbelow = true  			                         -- Horizontal splits will automatically be below
 opt.errorbells= false                                      -- No annoying noise 
-opt.cmdheight = 2                                          -- Give more space for displaying messages
+opt.cmdheight = 1                                          -- Give more space for displaying messages
 opt.tabstop = 4                                            -- Number of spaces a <Tab> is equivalent to
 opt.softtabstop = 4                                        -- Number of spaces a <Tab> counts for while performing edits
 opt.shiftwidth = 4                                         -- Number of spaces used for each step of autoindent

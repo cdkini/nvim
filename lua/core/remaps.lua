@@ -35,3 +35,6 @@ api.nvim_set_keymap('n', '<leader>cd', ':cd %:p:h<CR>:pwd<CR>', { noremap = true
 
 -- Treat Y like C or D (goes to EOL)
 api.nvim_set_keymap('n', 'Y', 'y$', { noremap = true})
+
+-- Align splits
+api.nvim_set_keymap('n', '<leader>=', '<C-w>=', { noremap = true})

@@ -9,3 +9,4 @@ api.nvim_set_keymap('n', '<leader>gc', '<cmd>lua require"telescope.builtin".git_
 api.nvim_set_keymap('n', '<leader>gC', '<cmd>lua require"telescope.builtin".git_commits()<cr>', { noremap = true})
 api.nvim_set_keymap('n', '<leader>gB', '<cmd>lua require"telescope.builtin".git_branches()<cr>', { noremap = true})
 
+api.nvim_set_keymap('n', '<leader>b/', '<cmd>lua require"telescope.builtin".buffers()<cr>', { noremap = true})
