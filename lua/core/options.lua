@@ -29,3 +29,5 @@ opt.termguicolors = true                                   -- Enables certain vi
 opt.completeopt = {'menuone', 'noinsert', 'noselect'}      -- nvim LSP
 opt.shortmess:append('c')                                  -- nvim LSP
 opt.title = true                                           -- Set filename as title
+opt.hidden = true
+opt.undodir = '~/.vim/undodir'

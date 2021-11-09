@@ -23,8 +23,8 @@ packer.init({
 packer.startup(function()
   local use = use
   use { -- Plugin manager
-    "wbthomason/packer.nvim",
-    event = "VimEnter",
+    'wbthomason/packer.nvim',
+    event = 'VimEnter',
   }
   use { -- Colorscheme
     'rmehri01/onenord.nvim',
@@ -103,8 +103,8 @@ packer.startup(function()
     end
   }
   use { -- Diagnostics
-    "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
+    'folke/trouble.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
     config = function()
       require('plugins.config.trouble')
     end
@@ -126,6 +126,11 @@ packer.startup(function()
     config = function()
       require('plugins.config.which-key')
     end
+  }
+  use {
+    "iamcco/markdown-preview.nvim",
+    run = "cd app && npm install",
+    ft = "markdown"
   }
   use 'lukas-reineke/indent-blankline.nvim' -- Indent markers
   use 'mhinz/vim-startify' -- Dashboard

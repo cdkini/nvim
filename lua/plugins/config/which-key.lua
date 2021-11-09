@@ -29,6 +29,7 @@ wk.register({
     p = 'Previous',
     n = 'Next',
     d = 'Close',
+    D = 'Close others',
     ['/'] = 'Search',
   },
   d = 'Diagnostics',
