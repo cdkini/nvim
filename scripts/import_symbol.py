@@ -47,25 +47,14 @@ def traverse_directory(root_dir: str) -> Dict[str, List[str]]:
     return symbols
 
 
-def main() -> Optional[str]:
+def main() -> None:
     root = get_git_root()
     symbols = traverse_directory(root)
     symbol = sys.argv[1]
     matches = symbols.get(symbol)
-    if not matches:
-        print("No match found!")
-        return
-    elif len(matches) > 1:
-        print("Namespace collision; multiple matches found!")
-        for i, match in enumerate(matches):
-            print(f"  {i+1}) {match}")
-        choice = int(input("Which import would you like: ")) - 1
-        match = matches[choice] 
-    else:
-        match = matches[0]
-
-    print(match)
-    return match
+    print()
+    for match in matches:
+        print(match)
 
 
 if __name__ == "__main__":

@@ -38,3 +38,14 @@ api.nvim_set_keymap('n', 'Y', 'y$', { noremap = true})
 
 -- Align splits
 api.nvim_set_keymap('n', '<leader>=', '<C-w>=', { noremap = true})
+
+api.nvim_exec(
+[[
+  function! PyImport()
+    let l:cmd = expand("<cword>")
+    exec ':!python ~/.config/nvim/scripts/import_symbol.py' shellescape(l:cmd)
+  endfunction
+]], true)
+
+-- Script to import
+api.nvim_set_keymap('n', '<leader>i', ':call PyImport()<CR>', { noremap = true })
