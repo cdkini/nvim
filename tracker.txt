@@ -1,5 +1,22 @@
-
+# This is meant to track how I use Neovim (tracked through autocmds)
 EXIT |  | 2021-11-26 12:58:19
 ENTER |  | 2021-11-26 12:58:24
 ENTER |  | 2021-11-26 12:58:24
 EXIT | /Users/cdkini/.config/nvim/tracker.txt | 2021-11-26 12:58:29
+ENTER | /Users/cdkini/Code/qn/tests/test_core.py | 2021-11-26 12:59:30
+ENTER | /Users/cdkini/Code/qn/tests/test_core.py | 2021-11-26 12:59:30
+ENTER | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/pytest-of-cdkini/pytest-25/test_edit_note_updates_index0/.qn/2f/2f184212c28e4c01a2ba6449b0ad0a40.md | 2021-11-26 13:00:59
+ENTER | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/pytest-of-cdkini/pytest-25/test_edit_note_updates_index0/.qn/2f/2f184212c28e4c01a2ba6449b0ad0a40.md | 2021-11-26 13:00:59
+EXIT | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/pytest-of-cdkini/pytest-25/test_edit_note_updates_index0/.qn/2f/2f184212c28e4c01a2ba6449b0ad0a40.md | 2021-11-26 13:00:59
+ENTER | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/pytest-of-cdkini/pytest-26/test_edit_note_updates_index0/.qn/2f/2f184212c28e4c01a2ba6449b0ad0a40.md | 2021-11-26 13:01:16
+ENTER | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/pytest-of-cdkini/pytest-26/test_edit_note_updates_index0/.qn/2f/2f184212c28e4c01a2ba6449b0ad0a40.md | 2021-11-26 13:01:16
+EXIT | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/pytest-of-cdkini/pytest-26/test_edit_note_updates_index0/.qn/2f/2f184212c28e4c01a2ba6449b0ad0a40.md | 2021-11-26 13:01:16
+EXIT | /Users/cdkini/Code/qn/src/core.py | 2021-11-26 13:04:59
+ENTER | /Users/cdkini/notes/.qn/.index.json | 2021-11-26 13:05:26
+ENTER | /Users/cdkini/notes/.qn/.index.json | 2021-11-26 13:05:26
+ENTER | /Users/cdkini/Code/qn/src/cli.py | 2021-11-26 13:06:22
+ENTER | /Users/cdkini/Code/qn/src/cli.py | 2021-11-26 13:06:22
+EXIT | /Users/cdkini/Code/qn/src/cli.py | 2021-11-26 13:06:48
+EXIT | /Users/cdkini/notes/.qn/.index.json | 2021-11-26 13:08:40
+
+EXIT | /Users/cdkini/.config/nvim/tracker.txt | 2021-11-26 13:10:20
