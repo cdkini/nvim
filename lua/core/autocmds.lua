@@ -17,6 +17,10 @@ function autocmd.load_autocmds()
   local definitions = {
     yank = {
       {"TextYankPost", [[* silent! lua vim.highlight.on_yank({higroup="IncSearch", timeout=400})]]};
+    },
+    tracker = {
+      {"VimEnter", [[* redir >> ~/.config/nvim/tracker.txt | silent echo "ENTER |" expand('%:p') "|" strftime("%Y-%m-%d %H:%M:%S") | redir END ]] };
+      {"VimLeave", [[* redir >> ~/.config/nvim/tracker.txt | silent echo "EXIT |" expand('%:p') "|" strftime("%Y-%m-%d %H:%M:%S") | redir END ]] };
     }
   }
 

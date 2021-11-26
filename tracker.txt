@@ -1,0 +1,5 @@
+
+EXIT |  | 2021-11-26 12:58:19
+ENTER |  | 2021-11-26 12:58:24
+ENTER |  | 2021-11-26 12:58:24
+EXIT | /Users/cdkini/.config/nvim/tracker.txt | 2021-11-26 12:58:29

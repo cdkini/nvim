@@ -9,18 +9,20 @@ from typing import Dict, List, Optional
 # :execute "!python <SCRIPT>.py" expand("<cword>")
 # Runs this script on the current word in your Vim buffer
 
+a = 1
 def get_git_root() -> str:
     process = subprocess.run(
         ["git", "rev-parse", "--show-toplevel"], stdout=subprocess.PIPE
     )
-    return process.stdout.strip().decode("utf-8")
+    stdout = process.stdout
+    root = stdout.strip().decode("utf-8")
+    return root
 
 
 def prepare_import_module(path: str, root_dir) -> str:
     relpath = os.path.relpath(path, root_dir)
-    relpath = relpath.replace("/", ".")
-    relpath = relpath[:-3]
-    return relpath
+    module = relpath.replace("/", ".")[:-3]
+    return module
 
 
 def traverse_file(path: str, root_dir: str, symbols: Dict[str, List[str]]) -> None:
@@ -29,12 +31,23 @@ def traverse_file(path: str, root_dir: str, symbols: Dict[str, List[str]]) -> No
         root = ast.parse(f.read(), path)
 
     for node in root.body:
-        if isinstance(node, (ast.FunctionDef, ast.ClassDef)):
+        if isinstance(node, ast.ClassDef):
             name = node.name
-            if name not in symbols:
-                symbols[name] = []
-            import_statement = f"from {module} import {name}"
-            symbols[node.name].append(import_statement)
+        elif isinstance(node, ast.FunctionDef):
+            name = node.name
+            if name.startswith("_"):
+                continue
+        # elif isinstance(node, ast.Assign):
+        #     name = node.targets[0].id
+        #     if name.startswith("_"):
+        #         continue
+        else:
+            continue
+
+        if name not in symbols:
+            symbols[name] = []
+        import_statement = f"from {module} import {name}"
+        symbols[name].append(import_statement)
 
 
 def traverse_directory(root_dir: str) -> Dict[str, List[str]]:
@@ -51,8 +64,7 @@ def main() -> None:
     root = get_git_root()
     symbols = traverse_directory(root)
     symbol = sys.argv[1]
-    matches = symbols.get(symbol)
-    print()
+    matches = symbols.get(symbol, [])
     for match in matches:
         print(match)
 

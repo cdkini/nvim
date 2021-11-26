@@ -42,10 +42,11 @@ api.nvim_set_keymap('n', '<leader>=', '<C-w>=', { noremap = true})
 api.nvim_exec(
 [[
   function! PyImport()
-    let l:cmd = expand("<cword>")
-    exec ':!python ~/.config/nvim/scripts/import_symbol.py' shellescape(l:cmd)
+    redir @"
+    silent !python ~/.config/nvim/scripts/import_symbol.py <cword>
+    redir END
   endfunction
 ]], true)
 
 -- Script to import
-api.nvim_set_keymap('n', '<leader>i', ':call PyImport()<CR>', { noremap = true })
+api.nvim_set_keymap('n', '<leader>i', ':call PyImport()<CR>', { noremap = true , silent = true })
