@@ -1,4 +1,5 @@
 local nvim_lsp = require('lspconfig')
+local coq = require('coq')
 local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
 local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
@@ -25,35 +26,27 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
-vim.fn.sign_define(
-    "LspDiagnosticsSignError",
-    {texthl = "LspDiagnosticsSignError", text = "", numhl = "LspDiagnosticsSignError"}
-)
-vim.fn.sign_define(
-    "LspDiagnosticsSignWarning",
-    {texthl = "LspDiagnosticsSignWarning", text = "", numhl = "LspDiagnosticsSignWarning"}
-)
-vim.fn.sign_define(
-    "LspDiagnosticsSignHint",
-    {texthl = "LspDiagnosticsSignHint", text = "", numhl = "LspDiagnosticsSignHint"}
-)
-vim.fn.sign_define(
-    "LspDiagnosticsSignInformation",
-    {texthl = "LspDiagnosticsSignInformation", text = "", numhl = "LspDiagnosticsSignInformation"}
-)
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
+
 
 require'lspconfig'.pyright.setup{
-    settings = {
-        python = {
-            analysis = {
-                typeCheckingMode = "basic",
-                autoSearchPaths = true,
-                diagnosticMode = "workspace",
-                useLibraryCodeForTypes = true,
-                diagnosticSeverityOverrides = {
-                    reportGeneralTypeIssues = "warning",
-                    reportPropertyTypeMismatch = "warning",
-                    reportTypedDictNotRequiredAccess = "warning"
+    coq.lsp_ensure_capabilities{
+        settings = {
+            python = {
+                analysis = {
+                    typeCheckingMode = "basic",
+                    autoSearchPaths = true,
+                    diagnosticMode = "workspace",
+                    useLibraryCodeForTypes = true,
+                    diagnosticSeverityOverrides = {
+                        reportGeneralTypeIssues = "warning",
+                        reportPropertyTypeMismatch = "warning",
+                        reportTypedDictNotRequiredAccess = "warning"
+                    }
                 }
             }
         }
@@ -61,3 +54,5 @@ require'lspconfig'.pyright.setup{
 }
 
 require'lspconfig'.tsserver.setup{}
+
+vim.cmd([[COQnow]])

@@ -58,14 +58,9 @@ packer.startup(function()
   }
   use { -- LSP
     'neovim/nvim-lspconfig',
+    requires = { 'ms-jpq/coq_nvim', 'ms-jpq/coq.artifacts' },
     config = function()
       require('plugins.config.lspconfig')
-    end
-  }
-  use { -- Completion engine
-    'hrsh7th/nvim-compe',
-    config = function()
-      require('plugins.config.nvim-compe')
     end
   }
   use { -- Fuzzy finder
