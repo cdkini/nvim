@@ -33,6 +33,13 @@ for type, icon in pairs(signs) do
 end
 
 
+vim.g.coq_settings = {
+    auto_start = true,
+    keymap = {
+        jump_to_mark = ""
+    }
+}
+
 require'lspconfig'.pyright.setup{
     coq.lsp_ensure_capabilities{
         settings = {
@@ -55,4 +62,4 @@ require'lspconfig'.pyright.setup{
 
 require'lspconfig'.tsserver.setup{}
 
-vim.cmd([[COQnow]])
+vim.cmd([[COQnow -s]])
