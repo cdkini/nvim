@@ -1,7 +1,8 @@
-local api = vim.api
+local keymap = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
 
 -- Use Ctrl + hjkl to move to a split or create a new one if one doesn't exist in that direction
-api.nvim_exec(
+vim.api.nvim_exec(
 [[
   function! WinMove(key)
       let t:curwin = winnr()
@@ -17,36 +18,27 @@ api.nvim_exec(
   endfunction
 ]], true)
 
-api.nvim_set_keymap('n', '<C-h>', ':call WinMove("h")<CR>', { noremap = true})
-api.nvim_set_keymap('n', '<C-j>', ':call WinMove("j")<CR>', { noremap = true})
-api.nvim_set_keymap('n', '<C-k>', ':call WinMove("k")<CR>', { noremap = true})
-api.nvim_set_keymap('n', '<C-l>', ':call WinMove("l")<CR>', { noremap = true})
+keymap('n', '<C-h>', ':call WinMove("h")<CR>', opts)
+keymap('n', '<C-j>', ':call WinMove("j")<CR>', opts)
+keymap('n', '<C-k>', ':call WinMove("k")<CR>', opts)
+keymap('n', '<C-l>', ':call WinMove("l")<CR>', opts)
+
+-- Resize with arrows
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Source/open init.lua
-api.nvim_set_keymap('n', '<leader>vs', ':luafile $MYVIMRC<CR>', { noremap = true})
-api.nvim_set_keymap('n', '<leader>ve', ':e $MYVIMRC<CR>', { noremap = true})
-api.nvim_set_keymap('n', '<leader>vi', ':PackerInstall<CR>', { noremap = true})
-api.nvim_set_keymap('n', '<leader>vc', ':PackerCompile<CR>', { noremap = true})
-api.nvim_set_keymap('n', '<leader>vd', ':PackerClean<CR>', { noremap = true})
-api.nvim_set_keymap('n', '<leader>vu', ':PackerUpdate<CR>', { noremap = true})
+keymap('n', '<leader>vs', ':PackerSync<CR>', opts)
+keymap('n', '<leader>ve', ':e $MYVIMRC<CR>', opts)
+keymap('n', '<leader>vi', ':PackerInstall<CR>', opts)
+keymap('n', '<leader>vc', ':PackerCompile<CR>', opts)
+keymap('n', '<leader>vd', ':PackerClean<CR>', opts)
+keymap('n', '<leader>vu', ':PackerUpdate<CR>', opts)
 
 -- cd to current buffer
-api.nvim_set_keymap('n', '<leader>cd', ':cd %:p:h<CR>:pwd<CR>', { noremap = true })
-
--- Treat Y like C or D (goes to EOL)
-api.nvim_set_keymap('n', 'Y', 'y$', { noremap = true})
+keymap('n', '<leader>cd', ':cd %:p:h<CR>:pwd<CR>', opts)
 
 -- Align splits
-api.nvim_set_keymap('n', '<leader>=', '<C-w>=', { noremap = true})
-
-api.nvim_exec(
-[[
-  function! PyImport()
-    redir @"
-    silent !python ~/.config/nvim/scripts/import_symbol.py <cword>
-    redir END
-  endfunction
-]], true)
-
--- Script to import
-api.nvim_set_keymap('n', '<leader>i', ':call PyImport()<CR>', { noremap = true , silent = true })
+keymap('n', '<leader>=', '<C-w>=', opts)
