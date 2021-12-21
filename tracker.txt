@@ -5567,3 +5567,84 @@ ENTER | /Users/cdkini/.config/nvim/~/NvimTree | 2021-12-20 18:24:42
 EXIT | /Users/cdkini/.config/nvim/~/NvimTree | 2021-12-20 18:24:45
 ENTER |  | 2021-12-20 18:24:49
 EXIT | /Users/cdkini/.config/nvim/lua/core/options.lua | 2021-12-20 18:25:07
+ENTER | /Users/cdkini/.config/nvim/.git/COMMIT_EDITMSG | 2021-12-20 18:25:18
+EXIT | /Users/cdkini/.config/nvim/.git/COMMIT_EDITMSG | 2021-12-20 18:25:29
+ENTER | /Users/cdkini/.config/nvim/.gitignore | 2021-12-20 18:25:33
+EXIT | /Users/cdkini/.config/nvim/.gitignore | 2021-12-20 18:25:36
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:26:34
+EXIT | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:26:44
+ENTER |  | 2021-12-20 18:26:48
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-20 18:31:59
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:32:06
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/colorscheme.lua | 2021-12-20 18:34:46
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:34:47
+EXIT | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:34:52
+ENTER |  | 2021-12-20 18:34:56
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-20 18:35:06
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:35:08
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/colorscheme.lua | 2021-12-20 18:37:00
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:37:02
+EXIT | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:37:04
+ENTER |  | 2021-12-20 18:37:08
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-20 18:37:21
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:37:24
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-20 18:38:41
+ENTER |  | 2021-12-20 18:38:46
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-20 18:39:16
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:39:19
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/colorscheme.lua | 2021-12-20 18:40:40
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:40:41
+EXIT | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:40:46
+ENTER |  | 2021-12-20 18:40:48
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-20 18:41:08
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:41:18
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/colorscheme.lua | 2021-12-20 18:41:38
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:41:39
+EXIT | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:41:41
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:41:43
+EXIT | /Users/cdkini/.config/nvim/init.lua | 2021-12-20 18:41:46
+ENTER |  | 2021-12-20 18:41:50
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-20 18:42:00
+ENTER | /Users/cdkini/.config/nvim/NvimTree | 2021-12-20 18:42:40
+EXIT | /Users/cdkini/.config/nvim/NvimTree | 2021-12-20 18:42:52
+ENTER | /Users/cdkini/.config/nvim/NvimTree | 2021-12-20 18:42:53
+EXIT | /Users/cdkini/.config/nvim/NvimTree | 2021-12-20 18:42:56
+ENTER |  | 2021-12-20 18:42:59
+EXIT |  | 2021-12-20 18:43:05
+ENTER |  | 2021-12-20 18:43:08
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-20 18:43:45
+ENTER | /Users/cdkini/.config/nvim/NvimTree | 2021-12-20 18:43:50
+EXIT | /Users/cdkini/.config/nvim/NvimTree | 2021-12-20 18:43:59
+ENTER |  | 2021-12-20 18:44:03
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/colorscheme.lua | 2021-12-20 18:44:30
+ENTER |  | 2021-12-20 18:44:31
+EXIT |  | 2021-12-20 18:44:36
+ENTER |  | 2021-12-20 18:44:40
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lualine.lua | 2021-12-20 18:45:51
+ENTER |  | 2021-12-20 18:45:53
+EXIT |  | 2021-12-20 18:45:54
+ENTER |  | 2021-12-21 09:38:24
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/trouble.lua | 2021-12-21 09:43:00
+ENTER |  | 2021-12-21 09:43:02
+EXIT |  | 2021-12-21 09:43:03
+ENTER |  | 2021-12-21 09:44:36
+EXIT |  | 2021-12-21 09:44:41
+ENTER |  | 2021-12-21 09:44:42
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-21 09:45:11
+ENTER |  | 2021-12-21 09:45:12
+EXIT |  | 2021-12-21 09:45:26
+ENTER |  | 2021-12-21 09:45:27
+EXIT |  | 2021-12-21 09:45:37
+ENTER |  | 2021-12-21 09:45:48
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-21 09:46:28
+ENTER |  | 2021-12-21 09:46:29
+EXIT |  | 2021-12-21 09:46:39
+ENTER |  | 2021-12-21 09:46:40
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-21 09:47:17
+ENTER |  | 2021-12-21 09:47:32
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-21 09:47:53
+ENTER |  | 2021-12-21 09:47:54
+EXIT |  | 2021-12-21 09:48:00
+ENTER |  | 2021-12-21 09:48:00
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/which-key.lua | 2021-12-21 09:48:30
+ENTER |  | 2021-12-21 09:49:53

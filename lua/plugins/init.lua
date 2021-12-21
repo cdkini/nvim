@@ -33,7 +33,7 @@ end
 return packer.startup(function(use)
    use 'wbthomason/packer.nvim' -- Plugin manager
    use { -- Colorscheme
-     'rmehri01/onenord.nvim',
+     'sainnhe/everforest',
      config = function()
        require('plugins.config.colorscheme')
      end
