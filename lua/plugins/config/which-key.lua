@@ -3,19 +3,21 @@ if not status_ok then
   return
 end
 
-localsetup = {
+local presets = require("which-key.plugins.presets")
+
+local setup = {
   plugins = {
     marks = true,
     registers = true,
-  },
-  presets = {
-    operators = false,
-    motions = false,
-    text_objects = false,
-    windows = false,
-    nav = false,
-    z = false,
-    g = false,
+    presets = {
+      operators = false,
+      motions = false,
+      text_objects = false,
+      windows = false,
+      nav = false,
+      z = false,
+      g = false,
+    }
   },
   icons = {
     breadcrumb = "»", 

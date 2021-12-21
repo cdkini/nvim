@@ -5648,3 +5648,86 @@ EXIT |  | 2021-12-21 09:48:00
 ENTER |  | 2021-12-21 09:48:00
 EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/which-key.lua | 2021-12-21 09:48:30
 ENTER |  | 2021-12-21 09:49:53
+EXIT |  | 2021-12-21 09:50:23
+ENTER | /Users/cdkini/.config/nvim/tracker.txt | 2021-12-21 09:50:26
+EXIT | /Users/cdkini/.config/nvim/tracker.txt | 2021-12-21 09:50:36
+ENTER |  | 2021-12-21 09:50:37
+EXIT |  | 2021-12-21 09:50:40
+ENTER |  | 2021-12-21 09:50:41
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/which-key.lua | 2021-12-21 09:51:12
+ENTER |  | 2021-12-21 09:51:12
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lualine.lua | 2021-12-21 09:51:45
+ENTER |  | 2021-12-21 09:51:46
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lualine.lua | 2021-12-21 09:54:30
+ENTER |  | 2021-12-21 09:54:31
+EXIT | /Users/cdkini/.config/nvim/lua/core/options.lua | 2021-12-21 09:55:41
+ENTER |  | 2021-12-21 09:55:42
+EXIT | /Users/cdkini/.config/nvim/lua/core/options.lua | 2021-12-21 09:56:14
+ENTER |  | 2021-12-21 09:59:30
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/which-key.lua | 2021-12-21 10:00:15
+ENTER |  | 2021-12-21 10:00:16
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/which-key.lua | 2021-12-21 10:00:57
+ENTER |  | 2021-12-21 10:00:59
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/which-key.lua | 2021-12-21 10:01:22
+ENTER |  | 2021-12-21 10:01:26
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/nvim-cmp.lua | 2021-12-21 10:15:19
+ENTER |  | 2021-12-21 10:15:20
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/nvim-cmp.lua | 2021-12-21 10:15:28
+ENTER |  | 2021-12-21 10:15:29
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lspconfig.lua | 2021-12-21 10:15:47
+ENTER |  | 2021-12-21 10:15:48
+EXIT |  | 2021-12-21 10:15:59
+ENTER |  | 2021-12-21 10:15:59
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lspconfig.lua | 2021-12-21 10:16:07
+ENTER |  | 2021-12-21 10:16:08
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lspconfig.lua | 2021-12-21 10:17:38
+ENTER |  | 2021-12-21 10:17:38
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lspconfig.lua | 2021-12-21 10:17:56
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-21 10:18:04
+ENTER |  | 2021-12-21 10:22:50
+EXIT |  | 2021-12-21 10:22:52
+ENTER |  | 2021-12-21 10:22:56
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-21 10:23:18
+ENTER |  | 2021-12-21 10:24:30
+
+EXIT | /Users/cdkini/.config/nvim/tracker.txt | 2021-12-21 10:24:41
+ENTER |  | 2021-12-21 10:24:52
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-21 10:26:56
+ENTER |  | 2021-12-21 10:26:56
+
+EXIT | /Users/cdkini/.config/nvim/tracker.txt | 2021-12-21 10:27:13
+ENTER |  | 2021-12-21 10:35:56
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-21 10:36:24
+ENTER | /Users/cdkini/.config/nvim/NvimTree | 2021-12-21 10:36:27
+EXIT | /Users/cdkini/.config/nvim/NvimTree | 2021-12-21 10:36:28
+ENTER | /Users/cdkini/.zshrc | 2021-12-21 10:36:32
+EXIT | /Users/cdkini/.zshrc | 2021-12-21 10:36:53
+ENTER | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-21 10:37:04
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/nvim-cmp.lua | 2021-12-21 10:38:18
+ENTER | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-21 10:38:20
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-21 10:38:40
+ENTER |  | 2021-12-21 10:38:41
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-21 10:39:00
+ENTER |  | 2021-12-21 10:39:01
+EXIT |  | 2021-12-21 10:39:29
+ENTER |  | 2021-12-21 10:39:30
+EXIT |  | 2021-12-21 10:39:33
+ENTER |  | 2021-12-21 10:39:34
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lspconfig.lua | 2021-12-21 10:41:20
+ENTER |  | 2021-12-21 10:41:21
+EXIT |  | 2021-12-21 10:42:17
+ENTER |  | 2021-12-21 10:42:21
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-21 10:43:12
+ENTER | /Users/cdkini/.config/nvim/init.lua | 2021-12-21 10:43:17
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lspconfig.lua | 2021-12-21 10:43:54
+ENTER | /Users/cdkini/Code/great_expectations/tests/execution_engine/test_execution_engine.py | 2021-12-21 10:43:59
+EXIT | /Users/cdkini/Code/great_expectations/tests/execution_engine/test_execution_engine.py | 2021-12-21 10:47:42
+ENTER |  | 2021-12-21 10:47:46
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/which-key.lua | 2021-12-21 10:49:14
+ENTER |  | 2021-12-21 10:49:15
+EXIT | /Users/cdkini/.config/nvim/lua/core/options.lua | 2021-12-21 10:50:14
+ENTER |  | 2021-12-21 10:50:15
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/which-key.lua | 2021-12-21 10:53:36
+ENTER |  | 2021-12-21 10:53:38
+EXIT |  | 2021-12-21 10:53:45
+ENTER |  | 2021-12-21 10:53:46

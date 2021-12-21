@@ -1,6 +1,5 @@
 local opt = vim.opt
 
-
 opt.autoindent = true                                      -- Aids with autoindenting
 opt.backup = false                                         -- Backup files 
 opt.bg = 'dark'                                            -- Color scheme
@@ -22,6 +21,7 @@ opt.relativenumber = true                                  -- Sets relative numb
 opt.scrolloff = 10                                         -- Improved view while scrolling
 opt.shiftwidth = 4                                         -- Number of spaces used for each step of autoindent
 opt.shortmess:append('c')                                  -- nvim LSP
+opt.showmode = false                                       -- Disable modal status (i.e. -- INSERT -- )
 opt.smartcase = true                                       -- Disables ignorecase if any caps are used in search query
 opt.smartindent = true                                     -- Aids with autoindenting
 opt.smarttab = true                                        -- <Tab> at start of a line inserts blanks to match surrounding code
@@ -30,7 +30,7 @@ opt.splitbelow = true  			                           -- Horizontal splits will a
 opt.swapfile = false                                       -- Prevents creation of .swp files, which store changes made to buffers
 opt.tabstop = 4                                            -- Number of spaces a <Tab> is equivalent to
 opt.termguicolors = true                                   -- Enables certain visuals
-opt.timeoutlen = 100                                       -- Time for a mapped sequence to complete (default is 1000ms)
+opt.timeoutlen = 300                                       -- Time for a mapped sequence to complete (default is 1000ms)
 opt.title = true                                           -- Set filename as title
 opt.undodir = '.undodir'                                   -- Write undofiles to dir
 opt.undofile = true                                        -- Enable undofiles
