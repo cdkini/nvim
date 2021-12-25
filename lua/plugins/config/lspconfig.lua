@@ -36,9 +36,13 @@ end
 vim.g.coq_settings = {
     auto_start = true,
     keymap = {
-        jump_to_mark = "<Tab>"
+        jump_to_mark = "<C-n>"
     }
 }
+
+-- require'lspconfig'.jedi_language_server.setup{
+--     coq.lsp_ensure_capabilities{}
+-- }
 
 require'lspconfig'.pyright.setup{
     coq.lsp_ensure_capabilities{

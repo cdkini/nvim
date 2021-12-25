@@ -5731,3 +5731,150 @@ EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/which-key.lua | 2021-12-21 
 ENTER |  | 2021-12-21 10:53:38
 EXIT |  | 2021-12-21 10:53:45
 ENTER |  | 2021-12-21 10:53:46
+EXIT |  | 2021-12-21 10:54:07
+ENTER |  | 2021-12-22 09:44:54
+EXIT |  | 2021-12-22 09:44:55
+ENTER |  | 2021-12-22 09:44:56
+EXIT |  | 2021-12-22 09:45:08
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 09:45:28
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 09:45:36
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 09:45:48
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 09:47:36
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 09:47:38
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 09:48:41
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 09:48:52
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 09:48:58
+ENTER | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-22 09:49:01
+EXIT | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-22 09:55:53
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 09:55:58
+ENTER | /Users/cdkini/Code/ge_playground/great_expectations/great_expectations.yml | 2021-12-22 10:15:30
+EXIT | /Users/cdkini/Code/ge_playground/great_expectations/great_expectations.yml | 2021-12-22 10:15:39
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 10:20:35
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 10:21:13
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 10:21:19
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 10:21:29
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 10:23:07
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 10:24:08
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 10:25:01
+ENTER |  | 2021-12-22 10:33:45
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/telescope.lua | 2021-12-22 10:34:59
+ENTER |  | 2021-12-22 10:34:59
+EXIT |  | 2021-12-22 10:35:03
+ENTER |  | 2021-12-22 10:35:05
+EXIT |  | 2021-12-22 10:35:31
+ENTER |  | 2021-12-22 10:35:33
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/init.lua | 2021-12-22 10:45:59
+ENTER |  | 2021-12-22 10:46:27
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lspconfig.lua | 2021-12-22 10:47:22
+ENTER |  | 2021-12-22 10:47:24
+EXIT | /Users/cdkini/.config/nvim/lua/plugins/config/lspconfig.lua | 2021-12-22 10:50:32
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 11:07:28
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 11:09:31
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 11:09:51
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 11:09:57
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 11:11:03
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 11:11:36
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 11:11:42
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 11:12:30
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 11:43:49
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-22 11:44:35
+ENTER | /Users/cdkini/Code/azure_ge/res | 2021-12-22 15:43:18
+EXIT | /Users/cdkini/Code/azure_ge/res | 2021-12-22 15:43:19
+ENTER | /Users/cdkini/Code/azure_ge/res | 2021-12-22 15:43:22
+EXIT | /Users/cdkini/Code/azure_ge/res | 2021-12-22 15:43:27
+ENTER | /Users/cdkini/Code/dgtest/dgtest/utils.py | 2021-12-22 15:44:33
+ENTER | /Users/cdkini/Code/dgtest/dgtest/utils.py | 2021-12-22 15:47:07
+ENTER |  | 2021-12-22 15:49:25
+EXIT | /Users/cdkini/Code/dgtest/dgtest/utils.py | 2021-12-22 15:54:13
+ENTER |  | 2021-12-22 15:54:14
+ENTER | /Users/cdkini/Code/qn/tests/__init__.py | 2021-12-22 15:59:37
+EXIT |  | 2021-12-22 15:59:39
+ENTER | /Users/cdkini/Code/qn/src/__init__.py | 2021-12-22 15:59:45
+EXIT | /Users/cdkini/Code/dgtest/tests/test_utils.py | 2021-12-22 16:01:36
+ENTER |  | 2021-12-22 16:01:41
+EXIT |  | 2021-12-22 16:01:58
+EXIT | /Users/cdkini/Code/qn/src/__init__.py | 2021-12-22 16:02:00
+ENTER | /Users/cdkini/Code/qn/tests/__init__.py | 2021-12-22 16:02:13
+EXIT |  | 2021-12-22 16:02:16
+ENTER | /Users/cdkini/Code/qn/tests/NvimTree | 2021-12-22 16:02:55
+EXIT | /Users/cdkini/Code/qn/tests/__init__.py | 2021-12-22 16:03:02
+ENTER | /Users/cdkini/Code/dgtest/tests/test_utils.py | 2021-12-22 16:03:29
+EXIT | /Users/cdkini/Code/dgtest/tests/test_utils.py | 2021-12-22 16:06:31
+ENTER |  | 2021-12-22 16:07:13
+ENTER | /Users/cdkini/Code/qn/tests/NvimTree | 2021-12-22 16:14:52
+EXIT | /Users/cdkini/Code/qn/tests/NvimTree | 2021-12-22 16:14:53
+EXIT | /Users/cdkini/Code/dgtest/dgtest/utils.py | 2021-12-22 16:26:19
+ENTER | /Users/cdkini/Code/dgtest/dgtest/cli.py | 2021-12-22 16:26:24
+EXIT | /Users/cdkini/Code/dgtest/tests/test_utils.py | 2021-12-22 16:39:29
+ENTER | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 16:49:15
+EXIT | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 16:49:38
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 16:49:40
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 17:13:42
+ENTER | /Users/cdkini/Code/azure_ge/seen | 2021-12-24 17:13:45
+EXIT | /Users/cdkini/Code/azure_ge/seen | 2021-12-24 17:13:45
+ENTER | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 17:13:53
+EXIT | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 17:13:54
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:14:05
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:14:18
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:14:26
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:15:46
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:16:44
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:18:11
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:19:35
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:19:42
+ENTER | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 17:19:45
+EXIT | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 17:19:47
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:23:22
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:23:56
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:24:43
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:25:25
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:25:34
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:25:37
+ENTER | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 17:32:28
+EXIT | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 17:32:30
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 17:32:33
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 17:32:33
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:32:36
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 17:32:46
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 18:12:26
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 18:12:40
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 18:36:28
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 18:36:48
+ENTER | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 18:37:19
+EXIT | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 18:37:26
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 19:55:40
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 19:55:48
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:09:22
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:10:52
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:14:03
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:14:27
+EXIT | /Users/cdkini/Code/dgtest/dgtest/utils.py | 2021-12-24 22:14:33
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:14:36
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:14:55
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:15:18
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:15:28
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:15:50
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:16:11
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:22:00
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:22:21
+ENTER | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:23:14
+EXIT | /Users/cdkini/Code/azure_ge/script2.py | 2021-12-24 22:23:33
+ENTER | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 22:23:35
+EXIT | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 22:23:37
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:24:41
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:25:18
+ENTER | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 22:25:19
+EXIT | /Users/cdkini/Code/azure_ge/azure_runs.csv | 2021-12-24 22:25:22
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:29:43
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:30:21
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:38:04
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:38:27
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:38:35
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:38:41
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:43:06
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:43:11
+ENTER | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:46:18
+EXIT | /Users/cdkini/Code/azure_ge/script.py | 2021-12-24 22:46:24
+ENTER |  | 2021-12-24 22:46:34
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2021-12-24 22:47:09
+ENTER |  | 2021-12-24 22:52:06
