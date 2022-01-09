@@ -64,7 +64,7 @@ return packer.startup(function(use)
    }
    use { -- LSP
      'neovim/nvim-lspconfig',
-     requires = { 'ms-jpq/coq_nvim', 'ms-jpq/coq.artifacts' },
+     requires = { 'ms-jpq/coq_nvim', 'ms-jpq/coq.artifacts', 'ray-x/lsp_signature.nvim' },
      config = function()
        require('plugins.config.lspconfig')
      end

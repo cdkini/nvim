@@ -45,6 +45,12 @@ vim.g.coq_settings = {
 -- }
 
 require'lspconfig'.pyright.setup{
+    on_attach = function(client, bufnr)
+        require 'lsp_signature'.on_attach({
+            floating_window = false,
+            hint_prefix = ' '
+        })
+    end,
     coq.lsp_ensure_capabilities{
         settings = {
             python = {

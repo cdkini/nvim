@@ -42,3 +42,7 @@ keymap('n', '<leader>cd', ':cd %:p:h<CR>:pwd<CR>', opts)
 
 -- Align splits
 keymap('n', '<leader>=', '<C-w>=', opts)
+
+-- Exit terminal
+keymap('t', 'jk', ':<C-\\><C-n>', opts)
+keymap('t', 'kj', ':<C-\\><C-n>', opts)
