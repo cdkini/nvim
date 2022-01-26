@@ -40,10 +40,6 @@ vim.g.coq_settings = {
     }
 }
 
--- require'lspconfig'.jedi_language_server.setup{
---     coq.lsp_ensure_capabilities{}
--- }
-
 require'lspconfig'.pyright.setup{
     on_attach = function(client, bufnr)
         require 'lsp_signature'.on_attach({
@@ -71,5 +67,6 @@ require'lspconfig'.pyright.setup{
 }
 
 require'lspconfig'.tsserver.setup{}
+require'lspconfig'.ocamlls.setup{}
 
 vim.cmd([[COQnow -s]])
