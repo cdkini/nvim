@@ -84,6 +84,7 @@ local mappings = {
     s = { 'Sync' },
     u = { 'Update' },
   },
+  z = 'Zoom',
 }
 
 which_key.setup(setup)

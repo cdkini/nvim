@@ -128,13 +128,30 @@ return packer.startup(function(use)
        require('plugins.config.which-key')
      end
    }
-   use {
+   use { -- Key preview / reminder
+     'mhinz/vim-startify',
+     config = function()
+       require('plugins.config.startify')
+     end
+   }
+   use { -- Key preview / reminder
+     'szw/vim-maximizer',
+     config = function()
+       require('plugins.config.maximizer')
+     end
+   }
+   use { -- Terminal integration
+     'akinsho/toggleterm.nvim',
+     config = function()
+       require('plugins.config.toggleterm')
+     end
+   }
+   use { -- .md support
      "iamcco/markdown-preview.nvim",
      run = "cd app && npm install",
      ft = "markdown"
    }
    use 'lukas-reineke/indent-blankline.nvim' -- Indent markers
-   use 'mhinz/vim-startify' -- Dashboard
    -- tpope the GOAT
    use 'tpope/vim-commentary' 
    use 'tpope/vim-eunuch'
