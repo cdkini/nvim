@@ -67,6 +67,9 @@ require'lspconfig'.pyright.setup{
 }
 
 require'lspconfig'.tsserver.setup{}
-require'lspconfig'.ocamlls.setup{}
+require'lspconfig'.gopls.setup{
+    coq.lsp_ensure_capabilities{},
+    cmd = {'gopls', '--remote=auto'}
+}
 
 vim.cmd([[COQnow -s]])
