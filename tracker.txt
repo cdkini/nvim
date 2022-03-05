@@ -12899,3 +12899,382 @@ ENTER |  | 2022-03-03 08:20:43
 EXIT |  | 2022-03-03 08:20:47
 ENTER |  | 2022-03-03 08:20:49
 EXIT |  | 2022-03-03 08:21:07
+ENTER |  | 2022-03-03 08:33:16
+EXIT |  | 2022-03-03 08:33:33
+ENTER |  | 2022-03-03 08:33:34
+EXIT |  | 2022-03-03 08:33:55
+ENTER |  | 2022-03-03 08:33:59
+EXIT |  | 2022-03-03 08:36:18
+ENTER |  | 2022-03-03 10:05:30
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-03 10:12:55
+ENTER |  | 2022-03-03 10:15:50
+EXIT | /Users/cdkini/Code/great_expectations/tests/rule_based_profiler/test_rule_based_profiler.py | 2022-03-03 10:19:32
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-03 10:22:04
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-03 10:22:58
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 10:23:07
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 10:23:58
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-03 10:26:49
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-03 10:26:54
+ENTER |  | 2022-03-03 10:26:57
+EXIT | /Users/cdkini/Code/great_expectations/.git/index | 2022-03-03 10:27:10
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-03 10:30:45
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-03 10:30:49
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-03 10:31:33
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule/rule.py | 2022-03-03 10:35:19
+ENTER |  | 2022-03-03 10:37:05
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule/rule.py | 2022-03-03 10:47:11
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 10:48:11
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 10:48:55
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 10:49:59
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule/rule.py | 2022-03-03 11:21:01
+ENTER |  | 2022-03-03 11:21:07
+EXIT |  | 2022-03-03 11:21:16
+ENTER |  | 2022-03-03 11:23:41
+EXIT | /Users/cdkini/Code/great_expectations/.git/index | 2022-03-03 11:23:58
+ENTER |  | 2022-03-03 11:25:45
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 11:26:05
+ENTER |  | 2022-03-03 11:33:33
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/types/base.py | 2022-03-03 11:33:39
+ENTER |  | 2022-03-03 11:33:41
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 11:38:54
+ENTER |  | 2022-03-03 11:39:20
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 11:39:42
+ENTER |  | 2022-03-03 11:39:50
+EXIT | /Users/cdkini/Code/great_expectations/tests/core/usage_statistics/test_usage_statistics_handler_methods.py | 2022-03-03 11:40:28
+ENTER |  | 2022-03-03 11:40:29
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 11:47:05
+ENTER |  | 2022-03-03 11:47:07
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 11:48:16
+ENTER |  | 2022-03-03 11:49:56
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/types/builder.py | 2022-03-03 11:52:34
+ENTER |  | 2022-03-03 11:56:27
+ENTER |  | 2022-03-03 12:01:06
+EXIT |  | 2022-03-03 12:01:25
+ENTER |  | 2022-03-03 12:01:57
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 12:10:51
+ENTER |  | 2022-03-03 12:11:06
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 12:18:28
+ENTER |  | 2022-03-03 12:21:57
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/core/usage_statistics/usage_statistics.py | 2022-03-03 12:26:05
+ENTER |  | 2022-03-03 12:27:14
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 12:33:46
+ENTER |  | 2022-03-03 12:39:04
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule/rule.py | 2022-03-03 12:40:54
+ENTER |  | 2022-03-03 12:42:05
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/types/builder.py | 2022-03-03 12:42:50
+ENTER |  | 2022-03-03 12:43:19
+EXIT | fugitive:///Users/cdkini/Code/great_expectations/.git//b34f85dcd353af31cd2f427c95e021c580c66b17 | 2022-03-03 12:43:44
+ENTER |  | 2022-03-03 12:44:44
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 12:44:54
+ENTER |  | 2022-03-03 13:12:59
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-03 13:18:15
+ENTER |  | 2022-03-03 13:19:21
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 13:19:52
+ENTER |  | 2022-03-03 13:21:38
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 13:23:26
+ENTER |  | 2022-03-03 13:24:24
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 13:25:36
+ENTER |  | 2022-03-03 13:25:38
+EXIT |  | 2022-03-03 13:25:52
+ENTER |  | 2022-03-03 13:31:31
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-03 13:33:16
+ENTER |  | 2022-03-03 13:34:36
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-03 13:36:12
+ENTER | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-03 13:39:08
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-03 13:39:20
+ENTER |  | 2022-03-03 13:41:18
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 13:41:43
+ENTER |  | 2022-03-03 13:41:44
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-03 13:42:28
+ENTER |  | 2022-03-03 13:43:58
+EXIT |  | 2022-03-03 13:44:09
+ENTER |  | 2022-03-03 13:44:14
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 13:44:20
+ENTER |  | 2022-03-03 13:46:23
+EXIT | /Users/cdkini/Code/great_expectations/.git/index | 2022-03-03 13:47:35
+ENTER |  | 2022-03-03 13:49:04
+EXIT | /Users/cdkini/Code/great_expectations/.git/index | 2022-03-03 13:51:10
+ENTER |  | 2022-03-03 13:52:31
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 13:52:50
+ENTER |  | 2022-03-03 13:54:20
+EXIT |  | 2022-03-03 13:54:36
+ENTER |  | 2022-03-03 13:54:37
+EXIT |  | 2022-03-03 13:54:38
+ENTER |  | 2022-03-03 14:00:45
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-03 14:01:36
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2022-03-03 14:05:28
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2022-03-03 14:06:25
+ENTER |  | 2022-03-03 14:12:20
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-03 14:13:28
+ENTER |  | 2022-03-03 14:19:05
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/types/base.py | 2022-03-03 14:20:30
+ENTER |  | 2022-03-03 14:21:50
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 14:22:06
+ENTER |  | 2022-03-03 14:23:40
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-03 14:24:25
+ENTER |  | 2022-03-03 14:26:37
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 14:27:32
+ENTER |  | 2022-03-03 14:32:31
+ENTER |  | 2022-03-03 14:43:02
+ENTER |  | 2022-03-03 15:04:10
+ENTER |  | 2022-03-03 15:15:37
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 15:21:30
+ENTER |  | 2022-03-03 15:23:12
+ENTER |  | 2022-03-03 15:23:31
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 15:24:03
+ENTER |  | 2022-03-03 15:24:54
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 15:25:06
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/types/__init__.py | 2022-03-03 15:30:47
+EXIT | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/nvimXJn27s/3.fugitiveblame | 2022-03-03 15:31:06
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule/rule.py | 2022-03-03 15:45:11
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule/rule.py | 2022-03-03 15:45:25
+ENTER |  | 2022-03-03 15:51:08
+EXIT |  | 2022-03-03 15:51:15
+ENTER |  | 2022-03-03 15:53:27
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule/rule.py | 2022-03-03 15:57:56
+ENTER |  | 2022-03-03 15:58:07
+EXIT | /Users/cdkini/Code/great_expectations/.git/index | 2022-03-03 15:58:14
+ENTER | /Users/cdkini/Code/great_expectations/temp.py | 2022-03-03 15:59:41
+EXIT | /Users/cdkini/Code/great_expectations/temp.py | 2022-03-03 16:00:12
+ENTER |  | 2022-03-03 16:00:20
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule/rule.py | 2022-03-03 16:00:30
+ENTER |  | 2022-03-03 16:00:31
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 16:01:09
+ENTER |  | 2022-03-03 16:02:04
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 16:02:36
+ENTER | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 16:03:15
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 16:03:28
+ENTER | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 16:04:43
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 16:08:43
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/types/__init__.py | 2022-03-03 16:09:08
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/types/__init__.py | 2022-03-03 16:09:24
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/types/__init__.py | 2022-03-03 16:12:07
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/types/__init__.py | 2022-03-03 16:12:16
+ENTER | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 16:12:31
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 16:12:34
+ENTER |  | 2022-03-03 16:12:57
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 16:13:11
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/core/usage_statistics/anonymizers/profiler_run_anonymizer.py | 2022-03-03 16:15:53
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/core/usage_statistics/anonymizers/profiler_run_anonymizer.py | 2022-03-03 16:29:11
+ENTER |  | 2022-03-03 16:29:15
+EXIT |  | 2022-03-03 16:34:55
+ENTER | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 16:35:04
+ENTER | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 16:42:21
+EXIT | /Users/cdkini/Code/great_expectations/requirements.txt | 2022-03-03 16:53:46
+ENTER | /Users/cdkini/Code/great_expectations/Dockerfile | 2022-03-03 16:53:49
+EXIT | /Users/cdkini/Code/great_expectations/Dockerfile | 2022-03-03 16:53:52
+ENTER |  | 2022-03-03 17:08:26
+EXIT |  | 2022-03-03 17:08:46
+ENTER | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 17:09:48
+EXIT | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 17:10:11
+ENTER | /Users/cdkini/Code/great_expectations/constraints-dev.txt | 2022-03-03 17:10:16
+EXIT | /Users/cdkini/Code/great_expectations/constraints-dev.txt | 2022-03-03 17:11:00
+ENTER |  | 2022-03-03 17:11:03
+EXIT |  | 2022-03-03 17:11:15
+ENTER | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/2763553808.md | 2022-03-03 17:11:42
+EXIT | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/2763553808.md | 2022-03-03 17:11:46
+ENTER |  | 2022-03-03 17:12:21
+EXIT | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 17:13:22
+ENTER | /Users/cdkini/Code/great_expectations/constraints-dev.txt | 2022-03-03 17:18:21
+EXIT | /Users/cdkini/Code/great_expectations/constraints-dev.txt | 2022-03-03 17:18:46
+ENTER | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 17:18:48
+EXIT | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 17:19:17
+ENTER | /Users/cdkini/Code/great_expectations/constraints-dev.txt | 2022-03-03 17:19:19
+EXIT | /Users/cdkini/Code/great_expectations/constraints-dev.txt | 2022-03-03 17:19:41
+ENTER |  | 2022-03-03 17:24:43
+EXIT | /Users/cdkini/Code/great_expectations/.git/index | 2022-03-03 17:25:22
+ENTER | /Users/cdkini/Code/great_expectations/constraints-dev.txt | 2022-03-03 17:32:08
+EXIT | /Users/cdkini/Code/great_expectations/constraints-dev.txt | 2022-03-03 17:32:22
+ENTER | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 17:36:55
+EXIT | fugitive:///Users/cdkini/Code/great_expectations/.git//0/constraints.txt | 2022-03-03 17:49:08
+ENTER |  | 2022-03-03 17:49:10
+EXIT | fugitive:///Users/cdkini/Code/great_expectations/.git//777d5f1d8f4778437996517c7afc1e4c4cf1f997 | 2022-03-03 17:56:54
+ENTER | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 17:56:56
+EXIT | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 17:58:53
+ENTER |  | 2022-03-03 17:58:55
+EXIT |  | 2022-03-03 18:01:01
+ENTER |  | 2022-03-03 18:01:05
+EXIT | /Users/cdkini/Code/great_expectations/constraints.txt | 2022-03-03 18:06:10
+ENTER | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 18:06:13
+EXIT | /Users/cdkini/Code/great_expectations/constraints_py36.txt | 2022-03-03 18:07:06
+ENTER | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 18:07:08
+EXIT | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 18:09:39
+ENTER |  | 2022-03-03 18:09:43
+EXIT | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 18:13:14
+ENTER | /Users/cdkini/Code/great_expectations/constraints-dev.txt | 2022-03-03 18:14:46
+EXIT | /Users/cdkini/Code/great_expectations/constraints-dev.txt | 2022-03-03 18:14:55
+ENTER | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 18:17:36
+EXIT | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 18:18:17
+ENTER | /Users/cdkini/Code/great_expectations/.git/MERGE_MSG | 2022-03-03 18:18:21
+EXIT | /Users/cdkini/Code/great_expectations/.git/MERGE_MSG | 2022-03-03 18:18:21
+ENTER | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 18:19:42
+EXIT | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-03 18:20:15
+ENTER |  | 2022-03-03 18:21:42
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-03 18:25:50
+ENTER | /Users/cdkini/Code/great_expectations/.git/COMMIT_EDITMSG | 2022-03-03 18:26:00
+EXIT | /Users/cdkini/Code/great_expectations/.git/COMMIT_EDITMSG | 2022-03-03 18:26:04
+ENTER |  | 2022-03-03 18:26:05
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-03 18:26:19
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/core/usage_statistics/usage_statistics.py | 2022-03-03 18:28:01
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/core/usage_statistics/anonymizers/profiler_run_anonymizer.py | 2022-03-03 21:17:57
+ENTER |  | 2022-03-03 21:24:49
+EXIT |  | 2022-03-03 21:24:59
+ENTER |  | 2022-03-03 21:25:00
+EXIT |  | 2022-03-03 21:25:03
+ENTER |  | 2022-03-03 21:25:04
+EXIT |  | 2022-03-03 21:25:25
+ENTER |  | 2022-03-03 21:25:27
+EXIT |  | 2022-03-03 21:25:38
+ENTER |  | 2022-03-03 21:25:43
+EXIT |  | 2022-03-03 21:25:45
+ENTER |  | 2022-03-03 21:33:26
+EXIT |  | 2022-03-03 21:33:27
+ENTER |  | 2022-03-03 21:33:29
+EXIT |  | 2022-03-03 21:33:44
+ENTER |  | 2022-03-03 21:33:45
+EXIT |  | 2022-03-03 21:33:48
+ENTER |  | 2022-03-03 21:33:48
+EXIT |  | 2022-03-03 21:33:59
+ENTER |  | 2022-03-04 07:54:35
+EXIT |  | 2022-03-04 07:54:36
+ENTER |  | 2022-03-04 07:54:54
+EXIT |  | 2022-03-04 07:55:15
+ENTER |  | 2022-03-04 07:55:16
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/core/usage_statistics/anonymizers/profiler_run_anonymizer.py | 2022-03-04 07:58:55
+ENTER |  | 2022-03-04 07:58:56
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 07:59:14
+ENTER |  | 2022-03-04 07:59:57
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 08:07:43
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/core/usage_statistics/usage_statistics.py | 2022-03-04 08:08:31
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-04 08:09:34
+ENTER |  | 2022-03-04 08:11:13
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 08:11:27
+ENTER |  | 2022-03-04 08:11:48
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 08:12:39
+EXIT | /Users/cdkini/Code/great_expectations/.github/workflows/test-pep273-compatibility.yml | 2022-03-04 08:13:25
+ENTER |  | 2022-03-04 08:13:26
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 08:14:46
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/domain_builder/categorical_column_domain_builder.py | 2022-03-04 08:15:21
+ENTER |  | 2022-03-04 08:15:22
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 08:15:50
+ENTER |  | 2022-03-04 08:16:48
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 08:17:13
+ENTER |  | 2022-03-04 08:17:15
+EXIT |  | 2022-03-04 08:17:46
+ENTER |  | 2022-03-04 08:17:47
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/core/usage_statistics/schemas.py | 2022-03-04 08:28:38
+ENTER |  | 2022-03-04 08:28:39
+EXIT |  | 2022-03-04 08:29:02
+ENTER |  | 2022-03-04 08:30:11
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 08:38:17
+ENTER |  | 2022-03-04 08:41:29
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-04 08:41:41
+ENTER |  | 2022-03-04 08:42:38
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 08:42:54
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 08:44:13
+ENTER |  | 2022-03-04 08:45:26
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 08:46:05
+ENTER |  | 2022-03-04 08:46:54
+EXIT | fugitive:///Users/cdkini/Code/great_expectations/.git//0/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 08:47:30
+ENTER |  | 2022-03-04 08:47:42
+EXIT |  | 2022-03-04 08:47:54
+ENTER |  | 2022-03-04 08:48:14
+EXIT | /Users/cdkini/Code/great_expectations/.git/index | 2022-03-04 08:48:40
+ENTER |  | 2022-03-04 08:48:42
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 08:50:56
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/core/usage_statistics/usage_statistics.py | 2022-03-04 08:51:33
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 08:52:18
+ENTER |  | 2022-03-04 08:53:04
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 08:53:35
+ENTER |  | 2022-03-04 08:54:59
+EXIT | /Users/cdkini/Code/great_expectations/.git/index | 2022-03-04 08:55:17
+ENTER |  | 2022-03-04 08:55:18
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 08:55:41
+ENTER |  | 2022-03-04 08:56:00
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 08:57:14
+ENTER |  | 2022-03-04 08:58:42
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 09:06:18
+ENTER |  | 2022-03-04 09:07:20
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 09:07:39
+ENTER |  | 2022-03-04 09:07:57
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 09:09:51
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 09:10:12
+ENTER |  | 2022-03-04 09:10:13
+EXIT |  | 2022-03-04 09:10:46
+ENTER |  | 2022-03-04 09:10:47
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-04 09:12:27
+ENTER |  | 2022-03-04 09:12:29
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 09:17:42
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 09:17:59
+ENTER |  | 2022-03-04 09:18:00
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-04 09:18:21
+ENTER |  | 2022-03-04 09:18:34
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-04 09:22:05
+ENTER |  | 2022-03-04 09:22:48
+EXIT | /Users/cdkini/Code/great_expectations/.git/index | 2022-03-04 09:24:25
+ENTER |  | 2022-03-04 09:24:37
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 09:25:18
+ENTER |  | 2022-03-04 09:28:30
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 09:47:28
+ENTER |  | 2022-03-04 09:48:27
+EXIT |  | 2022-03-04 09:48:56
+ENTER |  | 2022-03-04 09:50:05
+EXIT | /Users/cdkini/Code/great_expectations/tests/conftest.py | 2022-03-04 10:12:38
+ENTER |  | 2022-03-04 10:12:48
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/usage_statistics/test_usage_stats_common_messages_are_sent_v3api.py | 2022-03-04 10:16:04
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/core/usage_statistics/usage_statistics.py | 2022-03-04 10:17:00
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 10:18:33
+ENTER | /Users/cdkini/Code/great_expectations/tests/integration/usage_statistics/test_usage_stats_common_messages_are_sent_v3api.py | 2022-03-04 10:18:44
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/usage_statistics/test_usage_stats_common_messages_are_sent_v3api.py | 2022-03-04 10:18:46
+ENTER |  | 2022-03-04 10:18:55
+EXIT |  | 2022-03-04 10:19:37
+ENTER |  | 2022-03-04 10:20:30
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 10:20:47
+ENTER |  | 2022-03-04 10:31:15
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/checkpoint/checkpoint.py | 2022-03-04 11:06:43
+ENTER |  | 2022-03-04 11:07:11
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/types/__init__.py | 2022-03-04 11:07:33
+ENTER |  | 2022-03-04 11:20:59
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 11:25:48
+ENTER |  | 2022-03-04 11:26:07
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/domain_builder/categorical_column_domain_builder.py | 2022-03-04 11:26:47
+ENTER |  | 2022-03-04 11:26:52
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/expectation_configuration_builder/expectation_configuration_builder.py | 2022-03-04 14:09:08
+ENTER |  | 2022-03-04 14:09:22
+ENTER |  | 2022-03-04 14:14:44
+EXIT |  | 2022-03-04 14:15:01
+ENTER |  | 2022-03-04 14:15:15
+EXIT |  | 2022-03-04 14:15:22
+ENTER |  | 2022-03-04 14:15:55
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/data_context/data_context.py | 2022-03-04 14:17:41
+ENTER | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/1385222887.md | 2022-03-04 14:21:53
+EXIT | /private/var/folders/w1/41r71dwd4l9dkq6j2l8pcsk80000gn/T/1385222887.md | 2022-03-04 14:22:28
+ENTER | /Users/cdkini/Code/great_expectations/temp | 2022-03-04 14:23:35
+EXIT | /Users/cdkini/Code/great_expectations/temp | 2022-03-04 14:23:38
+ENTER | /Users/cdkini/Code/great_expectations/temp | 2022-03-04 14:23:55
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_rule_based_profiler.py | 2022-03-04 14:27:13
+ENTER |  | 2022-03-04 14:27:14
+EXIT |  | 2022-03-04 14:27:18
+ENTER | /Users/cdkini/Code/great_expectations/temp | 2022-03-04 14:27:47
+EXIT | /Users/cdkini/Code/great_expectations/tests/data_context/test_data_context_profilers.py | 2022-03-04 14:31:50
+ENTER |  | 2022-03-04 14:31:52
+EXIT |  | 2022-03-04 14:32:08
+ENTER |  | 2022-03-04 14:39:48
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/render/renderer/v3/suite_profile_notebook_renderer.py | 2022-03-04 14:40:14
+ENTER |  | 2022-03-04 14:40:44
+ENTER |  | 2022-03-04 14:43:51
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/profiler_result.py | 2022-03-04 14:44:03
+ENTER |  | 2022-03-04 14:44:06
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_profiler_user_workflows.py | 2022-03-04 14:44:43
+ENTER |  | 2022-03-04 14:44:51
+EXIT | /Users/cdkini/Code/great_expectations/tests/integration/profiling/rule_based_profilers/test_rule_based_profiler.py | 2022-03-04 14:45:21
+ENTER |  | 2022-03-04 14:45:49
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 14:46:19
+ENTER |  | 2022-03-04 14:49:33
+EXIT |  | 2022-03-04 14:49:40
+ENTER | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule_based_profiler.py | 2022-03-04 14:56:36
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/rule/rule.py | 2022-03-04 15:36:28
+ENTER |  | 2022-03-04 15:36:33
+EXIT |  | 2022-03-04 15:36:38
+ENTER |  | 2022-03-04 15:36:39
+EXIT | /Users/cdkini/Code/great_expectations/great_expectations/rule_based_profiler/config/base.py | 2022-03-05 08:48:59
