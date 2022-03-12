@@ -205,7 +205,6 @@ local plugins = {
     },
     {
         'mhinz/vim-startify',
-        cmd = "Startify",
         setup = function() mappings.startify() end
     },
     {

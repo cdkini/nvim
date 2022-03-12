@@ -251,7 +251,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
-    after = { "nvim-tree.lua", "barbar.nvim", "lualine.nvim" },
+    after = { "lualine.nvim", "nvim-tree.lua", "barbar.nvim" },
     load_after = {},
     loaded = true,
     needs_bufread = false,
@@ -343,10 +343,8 @@ _G.packer_plugins = {
     url = "https://github.com/tpope/vim-rhubarb"
   },
   ["vim-startify"] = {
-    commands = { "Startify" },
-    loaded = false,
+    loaded = true,
     needs_bufread = false,
-    only_cond = false,
     path = "/Users/cdkini/.local/share/nvim/site/pack/packer/opt/vim-startify",
     url = "https://github.com/mhinz/vim-startify"
   },
@@ -397,22 +395,17 @@ if not vim.g.packer_custom_loader_enabled then
   vim.g.packer_custom_loader_enabled = true
 end
 
--- Setup for: vim-matchup
-time([[Setup for vim-matchup]], true)
-try_loadstring("\27LJ\2\n4\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16vim-matchup\21packer_lazy_load\0", "setup", "vim-matchup")
-time([[Setup for vim-matchup]], false)
--- Setup for: nvim-lspconfig
-time([[Setup for nvim-lspconfig]], true)
-try_loadstring("\27LJ\2\nU\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0006if &ft == \"packer\" | echo \"\" | else | silent! e %\bcmd\bvimY\1\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0016\0\2\0009\0\3\0003\2\4\0)\3\0\0B\0\3\1K\0\1\0\0\rdefer_fn\bvim\19nvim-lspconfig\21packer_lazy_load\0", "setup", "nvim-lspconfig")
-time([[Setup for nvim-lspconfig]], false)
+-- Setup for: barbar.nvim
+time([[Setup for barbar.nvim]], true)
+try_loadstring("\27LJ\2\n'\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\vbarbar\rmappings\0", "setup", "barbar.nvim")
+time([[Setup for barbar.nvim]], false)
 -- Setup for: vim-startify
 time([[Setup for vim-startify]], true)
 try_loadstring("\27LJ\2\n)\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\rstartify\rmappings\0", "setup", "vim-startify")
 time([[Setup for vim-startify]], false)
--- Setup for: nvim-tree.lua
-time([[Setup for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n)\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\rnvimtree\rmappings\0", "setup", "nvim-tree.lua")
-time([[Setup for nvim-tree.lua]], false)
+time([[packadd for vim-startify]], true)
+vim.cmd [[packadd vim-startify]]
+time([[packadd for vim-startify]], false)
 -- Setup for: vim-fugitive
 time([[Setup for vim-fugitive]], true)
 try_loadstring("\27LJ\2\nS\0\0\3\0\4\0\a6\0\0\0009\0\1\0B\0\1\0016\0\2\0'\2\3\0B\0\2\1K\0\1\0\17vim-fugitive\21packer_lazy_load\rfugitive\rmappings\0", "setup", "vim-fugitive")
@@ -420,22 +413,14 @@ time([[Setup for vim-fugitive]], false)
 time([[packadd for vim-fugitive]], true)
 vim.cmd [[packadd vim-fugitive]]
 time([[packadd for vim-fugitive]], false)
--- Setup for: barbar.nvim
-time([[Setup for barbar.nvim]], true)
-try_loadstring("\27LJ\2\n'\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\vbarbar\rmappings\0", "setup", "barbar.nvim")
-time([[Setup for barbar.nvim]], false)
--- Setup for: toggleterm.nvim
-time([[Setup for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n+\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\15toggleterm\rmappings\0", "setup", "toggleterm.nvim")
-time([[Setup for toggleterm.nvim]], false)
+-- Setup for: vim-matchup
+time([[Setup for vim-matchup]], true)
+try_loadstring("\27LJ\2\n4\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16vim-matchup\21packer_lazy_load\0", "setup", "vim-matchup")
+time([[Setup for vim-matchup]], false)
 -- Setup for: gitsigns.nvim
 time([[Setup for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18gitsigns.nvim\21packer_lazy_load\0", "setup", "gitsigns.nvim")
 time([[Setup for gitsigns.nvim]], false)
--- Setup for: telescope.nvim
-time([[Setup for telescope.nvim]], true)
-try_loadstring("\27LJ\2\n*\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\14telescope\rmappings\0", "setup", "telescope.nvim")
-time([[Setup for telescope.nvim]], false)
 -- Setup for: vim-maximizer
 time([[Setup for vim-maximizer]], true)
 try_loadstring("\27LJ\2\n*\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\14maximizer\rmappings\0", "setup", "vim-maximizer")
@@ -444,10 +429,22 @@ time([[Setup for vim-maximizer]], false)
 time([[Setup for trouble.nvim]], true)
 try_loadstring("\27LJ\2\n(\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\ftrouble\rmappings\0", "setup", "trouble.nvim")
 time([[Setup for trouble.nvim]], false)
--- Config for: neoscroll.nvim
-time([[Config for neoscroll.nvim]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14neoscroll\frequire\0", "config", "neoscroll.nvim")
-time([[Config for neoscroll.nvim]], false)
+-- Setup for: telescope.nvim
+time([[Setup for telescope.nvim]], true)
+try_loadstring("\27LJ\2\n*\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\14telescope\rmappings\0", "setup", "telescope.nvim")
+time([[Setup for telescope.nvim]], false)
+-- Setup for: toggleterm.nvim
+time([[Setup for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n+\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\15toggleterm\rmappings\0", "setup", "toggleterm.nvim")
+time([[Setup for toggleterm.nvim]], false)
+-- Setup for: nvim-tree.lua
+time([[Setup for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n)\0\0\2\0\2\0\0046\0\0\0009\0\1\0B\0\1\1K\0\1\0\rnvimtree\rmappings\0", "setup", "nvim-tree.lua")
+time([[Setup for nvim-tree.lua]], false)
+-- Setup for: nvim-lspconfig
+time([[Setup for nvim-lspconfig]], true)
+try_loadstring("\27LJ\2\nU\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0006if &ft == \"packer\" | echo \"\" | else | silent! e %\bcmd\bvimY\1\0\4\0\5\0\t6\0\0\0'\2\1\0B\0\2\0016\0\2\0009\0\3\0003\2\4\0)\3\0\0B\0\3\1K\0\1\0\0\rdefer_fn\bvim\19nvim-lspconfig\21packer_lazy_load\0", "setup", "nvim-lspconfig")
+time([[Setup for nvim-lspconfig]], false)
 -- Config for: marks.nvim
 time([[Config for marks.nvim]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nmarks\frequire\0", "config", "marks.nvim")
@@ -456,6 +453,10 @@ time([[Config for marks.nvim]], false)
 time([[Config for onenord.nvim]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\31plugins.config.colorscheme\frequire\0", "config", "onenord.nvim")
 time([[Config for onenord.nvim]], false)
+-- Config for: neoscroll.nvim
+time([[Config for neoscroll.nvim]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14neoscroll\frequire\0", "config", "neoscroll.nvim")
+time([[Config for neoscroll.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-web-devicons ]]
@@ -469,14 +470,13 @@ time([[Sequenced loading]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeFocus lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeFocus", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeFindFileToggle lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeFindFileToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Startify lua require("packer.load")({'vim-startify'}, { cmd = "Startify", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file MaximizerToggle lua require("packer.load")({'vim-maximizer'}, { cmd = "MaximizerToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Telescope lua require("packer.load")({'telescope.nvim'}, { cmd = "Telescope", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file ToggleTerm lua require("packer.load")({'toggleterm.nvim'}, { cmd = "ToggleTerm", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Trouble lua require("packer.load")({'trouble.nvim'}, { cmd = "Trouble", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeToggle lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeFocus lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeFocus", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
 -- Keymap lazy-loads
@@ -488,11 +488,11 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au BufRead * ++once lua require("packer.load")({'indent-blankline.nvim', 'nvim-treesitter'}, { event = "BufRead *" }, _G.packer_plugins)]]
 vim.cmd [[au BufNewFile * ++once lua require("packer.load")({'nvim-treesitter'}, { event = "BufNewFile *" }, _G.packer_plugins)]]
+vim.cmd [[au InsertCharPre * ++once lua require("packer.load")({'better-escape.nvim'}, { event = "InsertCharPre *" }, _G.packer_plugins)]]
 vim.cmd [[au VimEnter * ++once lua require("packer.load")({'packer.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
 vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'friendly-snippets'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufRead * ++once lua require("packer.load")({'nvim-treesitter', 'indent-blankline.nvim'}, { event = "BufRead *" }, _G.packer_plugins)]]
-vim.cmd [[au InsertCharPre * ++once lua require("packer.load")({'better-escape.nvim'}, { event = "InsertCharPre *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end
