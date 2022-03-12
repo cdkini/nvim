@@ -104,4 +104,17 @@ M.toggleterm = function()
     vim.api.nvim_set_keymap('n', '<C-\\>', '<cmd>ToggleTerm<CR>', opts)
 end
 
+M.neogen = function()
+    vim.api.nvim_set_keymap('n', '<leader>af', '<cmd>Neogen func<CR>', opts)
+    vim.api.nvim_set_keymap('n', '<leader>ac', '<cmd>Neogen class<CR>', opts)
+end
+
+M.ultest = function()
+    vim.api.nvim_set_keymap('n', '<leader>tt', '<cmd>UltestNearest<CR>', opts)
+    vim.api.nvim_set_keymap('n', '<leader>tf', '<cmd>Ultest<CR>', opts)
+    vim.api.nvim_set_keymap('n', '<leader>tc', '<cmd>UltestClear<CR>', opts)
+    vim.api.nvim_set_keymap('n', '<leader>tl', '<cmd>UltestLast<CR>', opts)
+    vim.api.nvim_set_keymap('n', '<leader>ts', '<cmd>UltestSummary<CR>', opts)
+end
+
 return M

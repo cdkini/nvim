@@ -43,6 +43,11 @@ local opts = {
 local mappings = {
   [';'] = 'Dashboard',
   ['='] = 'Align splits',
+  a = {
+    name = 'Annotate',
+    f = 'Function',
+    c = 'Class',
+  },
   b = {
     name = 'Buffers',
     b = 'Pick',
@@ -74,6 +79,14 @@ local mappings = {
     f = 'Files',
     p = 'Project',
     ['/'] = 'Current file',
+  },
+  t = {
+    name = 'Test',
+    c = 'Clear',
+    f = 'File',
+    l = 'Last',
+    s = 'Summary',
+    t = 'Test'
   },
   v = {
     name = 'Vim',

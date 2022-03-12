@@ -239,6 +239,18 @@ local plugins = {
         keys="<space>",
         config = function() require('plugins.config.which-key') end
     },
+    {
+        'danymat/neogen',
+        cmd = "Neogen",
+        setup = function() mappings.neogen() end,
+        config = function() require('neogen').setup() end
+    },
+    {
+        "rcarriga/vim-ultest",
+        requires = {"vim-test/vim-test"},
+        run = ":UpdateRemotePlugins",
+        setup = function() mappings.ultest() end,
+    }
 }
 
 return packer.startup(function(use)
