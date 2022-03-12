@@ -1,19 +1,43 @@
-local fn = vim.fn
+vim.cmd "packadd packer.nvim"
 
--- Automatically install packer
-local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
-if fn.empty(fn.glob(install_path)) > 0 then
-  PACKER_BOOTSTRAP = fn.system {
-    "git",
-    "clone",
-    "--depth",
-    "1",
-    "https://github.com/wbthomason/packer.nvim",
-    install_path,
-  }
-  print "Installing packer close and reopen Neovim..."
-  vim.cmd [[packadd packer.nvim]]
+local ok, packer = pcall(require, "packer")
+
+if not ok then
+    local packer_path = vim.fn.stdpath "data" ..
+                            "/site/pack/packer/opt/packer.nvim"
+
+    print "Cloning packer.."
+    -- remove the dir before cloning
+    vim.fn.delete(packer_path, "rf")
+    vim.fn.system {
+        "git", "clone", "https://github.com/wbthomason/packer.nvim", "--depth",
+        "20", packer_path
+    }
+
+    vim.cmd "packadd packer.nvim"
+    ok, packer = pcall(require, "packer")
+
+    if ok then
+        print "Packer cloned successfully."
+    else
+        error("Couldn't clone packer !\nPacker path: " .. packer_path .. "\n" ..
+                  packer)
+    end
 end
+
+packer.init {
+    display = {
+        open_fn = function()
+            return require("packer.util").float {border = "single"}
+        end,
+        prompt_border = "single"
+    },
+    git = {
+        clone_timeout = 6000 -- seconds
+    },
+    auto_clean = true,
+    compile_on_sync = true
+}
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd [[
@@ -23,144 +47,203 @@ vim.cmd [[
   augroup end
 ]]
 
--- Use a protected call so we don't error out on first use
-local status_ok, packer = pcall(require, "packer")
-if not status_ok then
-  return
+-- Dict to supply mappings in 'setup'
+mappings = require('core.mappings')
+
+-- Utility to aid with performance
+packer_lazy_load = function(plugin, timer)
+    if plugin then
+        timer = timer or 0
+        vim.defer_fn(function() require("packer").loader(plugin) end, timer)
+    end
 end
 
 -- Install your plugins here
-return packer.startup(function(use)
-   use 'wbthomason/packer.nvim' -- Plugin manager
-   use { -- Colorscheme
-     'sainnhe/everforest',
-     config = function()
-       require('plugins.config.colorscheme')
-     end
-   }
-   use { -- Pretty icons
-     'kyazdani42/nvim-web-devicons',
-   }
-   use { -- Statusline
-     'nvim-lualine/lualine.nvim',
-     requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-     config = function()
-       require('plugins.config.lualine')
-     end
-   }
-   use { -- Bufferline
-     'romgrk/barbar.nvim',
-     requires = {'kyazdani42/nvim-web-devicons'},
-     config = function()
-       require('plugins.config.barbar')
-     end
-   }
-   use { -- Syntax highlighting
-     'nvim-treesitter/nvim-treesitter',
-     run = ':TSUpdate',
-     config = function()
-       require('plugins.config.treesitter') 
-     end
-   }
-   use { -- LSP
-     'neovim/nvim-lspconfig',
-     requires = { 'ms-jpq/coq_nvim', 'ms-jpq/coq.artifacts', 'ray-x/lsp_signature.nvim' },
-     config = function()
-       require('plugins.config.lspconfig')
-     end
-   }
-   use { -- Fuzzy finder
-     'nvim-telescope/telescope.nvim',
-     requires = { 'nvim-lua/plenary.nvim' },
-     config = function()
-       require('plugins.config.telescope')
-     end
-   }
-   use { -- Git integration
-     'tpope/vim-fugitive',
-     requires = { 'tpope/vim-rhubarb' },
-     config = function()
-       require('plugins.config.fugitive')
-     end
-   }
-   use { -- Git gutter support
-     'lewis6991/gitsigns.nvim',
-     requires = { 'nvim-lua/plenary.nvim' },
-     config = function()
-       require('plugins.config.gitsigns')
-     end
-   }
-   use { -- Autochdir
-     'ahmedkhalf/lsp-rooter.nvim',
-     config = function()
-       require('plugins.config.lsp-rooter')
-     end
-   }
-   use { -- Explorer
-     'kyazdani42/nvim-tree.lua',
-     requires = { 'kyazdani42/nvim-web-devicons' },
-     config = function() 
-       require('plugins.config.nvim-tree')
-     end
-   }
-   use { -- Diagnostics
-     'folke/trouble.nvim',
-     requires = 'kyazdani42/nvim-web-devicons',
-     config = function()
-       require('plugins.config.trouble')
-     end
-   }
-   use { -- Marks
-     'chentau/marks.nvim',
-     config = function()
-       require('plugins.config.marks')
-     end
-   }
-   use { -- Smooth scrolling
-     'karb94/neoscroll.nvim',
-     config = function()
-       require('plugins.config.neoscroll')
-     end
-   }
-   use { -- Key preview / reminder
-     'folke/which-key.nvim',
-     config = function()
-       require('plugins.config.which-key')
-     end
-   }
-   use { -- Key preview / reminder
-     'mhinz/vim-startify',
-     config = function()
-       require('plugins.config.startify')
-     end
-   }
-   use { -- Key preview / reminder
-     'szw/vim-maximizer',
-     config = function()
-       require('plugins.config.maximizer')
-     end
-   }
-   use { -- Terminal integration
-     'akinsho/toggleterm.nvim',
-     config = function()
-       require('plugins.config.toggleterm')
-     end
-   }
-   use { -- .md support
-     "iamcco/markdown-preview.nvim",
-     run = "cd app && npm install",
-     ft = "markdown"
-   }
-   use 'lukas-reineke/indent-blankline.nvim' -- Indent markers
-   -- tpope the GOAT
-   use 'tpope/vim-commentary' 
-   use 'tpope/vim-eunuch'
-   use 'tpope/vim-repeat'
-   use 'tpope/vim-surround'
+local plugins = {
+    {
+        "nvim-lua/plenary.nvim"
+    },
+    {
+        "lewis6991/impatient.nvim"
+    },
+    {
+        "nathom/filetype.nvim"
+    },
+    {
+        "wbthomason/packer.nvim",
+        event = "VimEnter"
+    },
+    {
+        'tpope/vim-commentary'
+    },
+    {
+        'tpope/vim-eunuch'
+    },
+    {
+        'tpope/vim-repeat'
+    },
+    {
+        'tpope/vim-surround'
+    },
+    {
+        'chentau/marks.nvim',
+        config = function() require('marks').setup({}) end
+    },
+    {
+        'karb94/neoscroll.nvim',
+        config = function() require('neoscroll').setup({}) end
+    },
+    {
+        'szw/vim-maximizer',
+        cmd = "MaximizerToggle",
+        setup = function() mappings.maximizer() end
+    },
+    {
+        'rmehri01/onenord.nvim',
+        config = function() require('plugins.config.colorscheme') end
+    },
+    {
+        "kyazdani42/nvim-web-devicons",
+        after = "onenord.nvim"},
+    {
+        'nvim-lualine/lualine.nvim',
+        after = "nvim-web-devicons",
+        config = function() require('plugins.config.lualine') end
+    },
+    {
+        'romgrk/barbar.nvim',
+        after = "nvim-web-devicons",
+        setup = function() mappings.barbar() end,
+    },
+    {
+        'lukas-reineke/indent-blankline.nvim',
+        event = "BufRead"
+    },
+    {
+        'nvim-treesitter/nvim-treesitter',
+        event = {"BufRead", "BufNewFile"},
+        config = function() require('plugins.config.treesitter') end,
+        run = ':TSUpdate'
+    },
+    {
+        'tpope/vim-fugitive',
+        requires = {'tpope/vim-rhubarb'},
+        setup = function()
+            mappings.fugitive()
+            packer_lazy_load "vim-fugitive"
+        end
+    },
+    {
+        'lewis6991/gitsigns.nvim',
+        opt = true,
+        config = function() require('plugins.config.gitsigns') end,
+        setup = function() packer_lazy_load "gitsigns.nvim" end
+    },
+    {
+        "neovim/nvim-lspconfig",
+        module = "lspconfig",
+        opt = true,
+        setup = function()
+            packer_lazy_load "nvim-lspconfig"
+            -- reload the current file so lsp actually starts for it
+            vim.defer_fn(function()
+                vim.cmd 'if &ft == "packer" | echo "" | else | silent! e %'
+            end, 0)
+        end,
+        config = function() require('plugins.config.lspconfig') end
+    },
+    {
+        "ray-x/lsp_signature.nvim",
+        after = "nvim-lspconfig",
+        config = function() require('plugins.config.lsp_signature') end
+    },
+    {
+        "andymass/vim-matchup",
+        opt = true,
+        setup = function() packer_lazy_load "vim-matchup" end
+    },
+    {
+        "max397574/better-escape.nvim",
+        event = "InsertCharPre",
+        config = function() require("better_escape").setup({}) end,
+    },
+    {
+        "rafamadriz/friendly-snippets",
+        module = "cmp_nvim_lsp",
+        event = "InsertEnter"
+    },
+    {
+        "hrsh7th/nvim-cmp",
+        after = "friendly-snippets",
+        config = function() require('plugins.config.nvim-cmp') end,
+    },
+    {
+        "L3MON4D3/LuaSnip",
+        wants = "friendly-snippets",
+        after = "nvim-cmp",
+        config = function() require('plugins.config.luasnip') end
+    },
+    {
+        "saadparwaiz1/cmp_luasnip",
+        after = "LuaSnip"
+    },
+    {
+        "hrsh7th/cmp-nvim-lua",
+        after = "cmp_luasnip"
+    },
+    {
+        "hrsh7th/cmp-nvim-lsp",
+        after = "cmp-nvim-lua"
+    },
+    {
+        "hrsh7th/cmp-buffer",
+        after = "cmp-nvim-lsp"
+    },
+    {
+        "hrsh7th/cmp-path",
+        after = "cmp-buffer"
+    },
+    {
+        'mhinz/vim-startify',
+        cmd = "Startify",
+        setup = function() mappings.startify() end
+    },
+    {
+        "kyazdani42/nvim-tree.lua",
+        after = "nvim-web-devicons",
+        cmd = {"NvimTreeToggle", "NvimTreeFocus", "NvimTreeFindFileToggle"},
+        setup = function() mappings.nvimtree() end,
+        config = function() require('plugins.config.nvim-tree') end
+    },
+    {
+        "nvim-telescope/telescope.nvim",
+        module = "telescope",
+        cmd = "Telescope",
+        setup = function() mappings.telescope() end
+    },
+    {
+        'folke/trouble.nvim',
+        requires = 'kyazdani42/nvim-web-devicons',
+        cmd = "Trouble",
+        setup = function() mappings.trouble() end,
+        config = function() require('trouble').setup({}) end
+    },
+    {
+        'akinsho/toggleterm.nvim',
+        cmd = "ToggleTerm",
+        setup = function() mappings.toggleterm() end,
+        config = function() require('plugins.config.toggleterm') end
+    },
+    {
+        'folke/which-key.nvim',
+        opt = true,
+        keys="<space>",
+        config = function() require('plugins.config.which-key') end
+    },
+}
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if PACKER_BOOTSTRAP then
-    require("packer").sync()
-  end
+return packer.startup(function(use)
+   for _, v in pairs(plugins) do
+      use(v)
+   end
 end)

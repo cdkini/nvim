@@ -1,8 +1,9 @@
-local toggleterm = require('toggleterm')
-local api = vim.api
+local ok, toggleterm = pcall(require, 'toggleterm')
+if not ok then
+    return
+done
 
 toggleterm.setup{
   direction = 'float'
 }
 
-api.nvim_set_keymap('n', '<C-\\>', '<cmd>ToggleTerm<CR>', { noremap = true})

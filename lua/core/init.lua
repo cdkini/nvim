@@ -1,3 +1,4 @@
 require('core.options')
-require('core.remaps')
 require('core.autocmds')
+mappings = require('core.mappings')
+mappings.core()

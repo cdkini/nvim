@@ -1,6 +1,9 @@
-local api = vim.api
+local ok, nvimtree = pcall(require, 'nvim-tree')
+if not ok then
+	return
+end
 
-require('nvim-tree').setup({
+nvimtree.setup({
   disable_netrw = false,
   view = {
       width = 50
@@ -8,8 +11,6 @@ require('nvim-tree').setup({
   update_cwd = true,
   hijack_cursor = true,
   update_focused_file = {
-      enable = true   
+      enable = true
   }
 })
-
-api.nvim_set_keymap('n', '<leader>e', '<cmd>NvimTreeFindFileToggle<cr>', { noremap = true})

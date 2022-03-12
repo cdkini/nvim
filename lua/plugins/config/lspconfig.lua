@@ -1,21 +1,13 @@
-local nvim_lsp = require('lspconfig')
-local coq = require('coq')
+local ok, lspconfig = pcall(require, 'lspconfig')
+if not ok then
+	return
+end
+
 local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
 local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
 buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
--- Mappings.
-local opts = { noremap=true, silent=true }
-vim.cmd("nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>")
-vim.cmd("nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>")
-vim.cmd("nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>")
-vim.cmd("nnoremap <silent> gi <cmd>lua vim.lsp.buf.implementation()<CR>")
-vim.cmd("nnoremap <silent> ca <cmd>lua vim.lsp.buf.code_action()<CR>")
-vim.cmd("nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>")
-vim.cmd("nnoremap <silent> <leader>rn <cmd>lua vim.lsp.buf.rename()<CR>")
-vim.cmd("nnoremap <silent> [d <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>")
-vim.cmd("nnoremap <silent> ]d <cmd>lua vim.lsp.diagnostic.goto_next()<CR>")
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -32,44 +24,30 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
+local on_attach = function(_, bufnr)
+  local opts = { noremap = true, silent = true }
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+  vim.cmd("nnoremap <silent> [d <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>")
+  vim.cmd("nnoremap <silent> ]d <cmd>lua vim.lsp.diagnostic.goto_next()<CR>")
+  vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
+end
 
-vim.g.coq_settings = {
-    auto_start = true,
-    keymap = {
-        jump_to_mark = "<C-n>"
-    }
-}
+-- nvim-cmp supports additional completion capabilities
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
-require'lspconfig'.pyright.setup{
-    on_attach = function(client, bufnr)
-        require 'lsp_signature'.on_attach({
-            floating_window = false,
-            hint_prefix = ' '
-        })
-    end,
-    coq.lsp_ensure_capabilities{
-        settings = {
-            python = {
-                analysis = {
-                    typeCheckingMode = "basic",
-                    autoSearchPaths = true,
-                    diagnosticMode = "workspace",
-                    useLibraryCodeForTypes = true,
-                    diagnosticSeverityOverrides = {
-                        reportGeneralTypeIssues = "warning",
-                        reportPropertyTypeMismatch = "warning",
-                        reportTypedDictNotRequiredAccess = "warning"
-                    }
-                }
-            }
-        }
-    }
-}
-
-require'lspconfig'.tsserver.setup{}
-require'lspconfig'.gopls.setup{
-    coq.lsp_ensure_capabilities{},
-    cmd = {'gopls', '--remote=auto'}
-}
-
-vim.cmd([[COQnow -s]])
+-- Enable the following language servers
+local servers = { 'pyright', 'tsserver' }
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+end

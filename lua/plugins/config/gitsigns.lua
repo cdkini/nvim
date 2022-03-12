@@ -15,4 +15,3 @@ require('gitsigns').setup({
 })
 
 
-api.nvim_set_keymap('n', '<leader>gB', '<cmd>lua require"telescope.builtin".git_branches()<cr>', { noremap = true})
