@@ -72,7 +72,8 @@ M.fugitive = function()
     vim.api.nvim_set_keymap('n', '<leader>gg', '<cmd>Git<cr>', opts)
     vim.api.nvim_set_keymap('n', '<leader>gb', '<cmd>Git blame<cr>', opts)
     vim.api.nvim_set_keymap('n', '<leader>gl', '<cmd>Git log<cr>', opts)
-    vim.api.nvim_set_keymap('n', '<leader>gh', '<cmd>GBrowse<cr>', opts)
+    vim.api.nvim_set_keymap('n', '<leader>gh', '<cmd>lua require"gitlinker".get_buf_range_url("n", {action_callback = require"gitlinker.actions".open_in_browser})<cr>', opts)
+    vim.api.nvim_set_keymap('v', '<leader>gh', '<cmd>lua require"gitlinker".get_buf_range_url("n", {action_callback = require"gitlinker.actions".open_in_browser})<cr>', opts)
 end
 
 
@@ -94,6 +95,7 @@ M.telescope = function()
     vim.api.nvim_set_keymap('n', '<leader>gB', '<cmd>lua require"telescope.builtin".git_branches(require("telescope.themes").get_ivy({}))<cr>', opts)
     vim.api.nvim_set_keymap('n', '<leader>b/', '<cmd>lua require"telescope.builtin".buffers(require("telescope.themes").get_ivy({}))<cr>', opts)
     vim.api.nvim_set_keymap('n', '<leader>gB', '<cmd>lua require"telescope.builtin".git_branches()<cr>', opts)
+    vim.api.nvim_set_keymap('n', '<leader>sr', '<cmd>lua require"telescope.builtin".resume()<cr>', opts)
 end
 
 M.trouble = function()

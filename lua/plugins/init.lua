@@ -86,6 +86,10 @@ local plugins = {
         'tpope/vim-surround'
     },
     {
+        'jedi2610/nvim-rooter.lua',
+        config = function() require'nvim-rooter'.setup() end
+    },
+    {
         'chentau/marks.nvim',
         config = function() require('marks').setup({}) end
     },
@@ -127,7 +131,6 @@ local plugins = {
     },
     {
         'tpope/vim-fugitive',
-        requires = {'tpope/vim-rhubarb'},
         setup = function()
             mappings.fugitive()
             packer_lazy_load "vim-fugitive"
@@ -171,6 +174,10 @@ local plugins = {
         "rafamadriz/friendly-snippets",
         module = "cmp_nvim_lsp",
         event = "InsertEnter"
+    },
+    {
+        "ruifm/gitlinker.nvim",
+        config = function() require('gitlinker').setup() end
     },
     {
         "hrsh7th/nvim-cmp",

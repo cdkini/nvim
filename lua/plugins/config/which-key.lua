@@ -78,6 +78,7 @@ local mappings = {
     b = 'Buffers',
     f = 'Files',
     p = 'Project',
+    r = 'Resume',
     ['/'] = 'Current file',
   },
   t = {
