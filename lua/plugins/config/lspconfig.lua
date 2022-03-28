@@ -3,10 +3,10 @@ if not ok then
 	return
 end
 
-local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
-local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+-- local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+-- local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
-buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
+-- buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
@@ -32,7 +32,7 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+  -- vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   vim.cmd("nnoremap <silent> [d <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>")
   vim.cmd("nnoremap <silent> ]d <cmd>lua vim.lsp.diagnostic.goto_next()<CR>")
@@ -44,7 +44,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver' }
+local servers = { 'pyright', 'tsserver', 'gopls' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,

@@ -35,7 +35,7 @@ vim.opt.updatetime = 100 -- Faster completion
 vim.opt.wrap = false -- Display long lines as just one line
 
 local disabled_built_ins = {
-    "2html_plugin", "getscript", "getscriptPlugin", "gzip", "logipat", "netrw",
+    "2html_plugin", "getscript", "getscriptPlugin", "gzip", "logipat",
     "netrwPlugin", "netrwSettings", "netrwFileHandlers", "matchit", "tar",
     "tarPlugin", "rrhelper", "spellfile_plugin", "vimball", "vimballPlugin",
     "zip", "zipPlugin"

@@ -13,6 +13,17 @@ vim.api.nvim_exec([[
   endfunction
 ]], true)
 
+vim.api.nvim_exec([[
+function! ToggleQuickFix()
+    if empty(filter(getwininfo(), 'v:val.quickfix'))
+        copen
+    else
+        cclose
+    endif
+endfunction
+]], true)
+
+
 local opts = {noremap = true, silent = true}
 local M = {}
 
@@ -52,6 +63,16 @@ M.core = function()
     vim.api.nvim_set_keymap('n', '<leader>vc', ':PackerCompile<CR>', opts)
     vim.api.nvim_set_keymap('n', '<leader>vd', ':PackerClean<CR>', opts)
     vim.api.nvim_set_keymap('n', '<leader>vu', ':PackerUpdate<CR>', opts)
+
+    -- Center cursor during search/line concatenation
+    vim.api.nvim_set_keymap('n', 'n', 'nzz', opts)
+    vim.api.nvim_set_keymap('n', 'N', 'Nzz', opts)
+    vim.api.nvim_set_keymap('n', 'J', 'mzJ`z', opts)
+
+    -- Quickfix navigation
+    vim.api.nvim_set_keymap('n', '<C-n>', ':cnext<CR>', opts)
+    vim.api.nvim_set_keymap('n', '<C-p>', ':cprev<CR>', opts)
+    vim.api.nvim_set_keymap('n', '<C-q>', ':call ToggleQuickFix()<CR>', opts)
 end
 
 M.maximizer = function()
@@ -72,8 +93,7 @@ M.fugitive = function()
     vim.api.nvim_set_keymap('n', '<leader>gg', '<cmd>Git<cr>', opts)
     vim.api.nvim_set_keymap('n', '<leader>gb', '<cmd>Git blame<cr>', opts)
     vim.api.nvim_set_keymap('n', '<leader>gl', '<cmd>Git log<cr>', opts)
-    vim.api.nvim_set_keymap('n', '<leader>gh', '<cmd>lua require"gitlinker".get_buf_range_url("n", {action_callback = require"gitlinker.actions".open_in_browser})<cr>', opts)
-    vim.api.nvim_set_keymap('v', '<leader>gh', '<cmd>lua require"gitlinker".get_buf_range_url("n", {action_callback = require"gitlinker.actions".open_in_browser})<cr>', opts)
+    vim.api.nvim_set_keymap('n', '<leader>gh', '<cmd>GBrowse<cr>', opts)
 end
 
 

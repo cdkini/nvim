@@ -103,12 +103,12 @@ local plugins = {
         setup = function() mappings.maximizer() end
     },
     {
-        'rmehri01/onenord.nvim',
+        'sainnhe/gruvbox-material',
         config = function() require('plugins.config.colorscheme') end
     },
     {
         "kyazdani42/nvim-web-devicons",
-        after = "onenord.nvim"},
+        after = "gruvbox-material"},
     {
         'nvim-lualine/lualine.nvim',
         after = "nvim-web-devicons",
@@ -131,6 +131,7 @@ local plugins = {
     },
     {
         'tpope/vim-fugitive',
+        requires = 'tpope/vim-rhubarb',
         setup = function()
             mappings.fugitive()
             packer_lazy_load "vim-fugitive"
@@ -174,10 +175,6 @@ local plugins = {
         "rafamadriz/friendly-snippets",
         module = "cmp_nvim_lsp",
         event = "InsertEnter"
-    },
-    {
-        "ruifm/gitlinker.nvim",
-        config = function() require('gitlinker').setup() end
     },
     {
         "hrsh7th/nvim-cmp",
