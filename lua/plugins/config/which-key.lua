@@ -98,6 +98,11 @@ local mappings = {
     s = { 'Sync' },
     u = { 'Update' },
   },
+  w = {
+    name = 'Wiki',
+    w = { 'Index' },
+    i = { 'Diary' },
+  },
   z = 'Zoom',
 }
 

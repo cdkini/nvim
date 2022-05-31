@@ -86,11 +86,10 @@ local plugins = {
         'tpope/vim-surround'
     },
     {
-        'jedi2610/nvim-rooter.lua',
-        config = function() require'nvim-rooter'.setup() end
+        'ygm2/rooter.nvim'
     },
     {
-        'chentau/marks.nvim',
+        'chentoast/marks.nvim',
         config = function() require('marks').setup({}) end
     },
     {
@@ -232,12 +231,6 @@ local plugins = {
         config = function() require('trouble').setup({}) end
     },
     {
-        'akinsho/toggleterm.nvim',
-        cmd = "ToggleTerm",
-        setup = function() mappings.toggleterm() end,
-        config = function() require('plugins.config.toggleterm') end
-    },
-    {
         'folke/which-key.nvim',
         opt = true,
         keys="<space>",
@@ -250,11 +243,11 @@ local plugins = {
         config = function() require('neogen').setup() end
     },
     {
-        "rcarriga/vim-ultest",
-        requires = {"vim-test/vim-test"},
-        run = ":UpdateRemotePlugins",
-        setup = function() mappings.ultest() end,
-    }
+        'vimwiki/vimwiki',
+        config = function()
+            vim.cmd([[ let g:vimwiki_list = [{'path': '~/vimwiki', 'diary_rel_path': '', 'syntax': 'markdown', 'ext': '.md'}] ]])
+        end
+    },
 }
 
 return packer.startup(function(use)
