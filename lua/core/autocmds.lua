@@ -6,3 +6,6 @@ vim.cmd [[ au BufWritePre * :%s/\s\+$//e ]]
 
 -- Don't auto commenting new lines
 vim.cmd [[ au BufEnter * set fo-=c fo-=r fo-=o]]
+
+-- Format on save
+vim.cmd [[ au BufWritePre * lua vim.lsp.buf.formatting() ]]
