@@ -100,8 +100,11 @@ local mappings = {
   },
   w = {
     name = 'Wiki',
+    d = { 'Delete' },
+    n = { 'New' },
+    r = { 'Rename' },
+    t = { 'Today' },
     w = { 'Index' },
-    i = { 'Diary' },
   },
   z = 'Zoom',
 }

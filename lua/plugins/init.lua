@@ -102,12 +102,13 @@ local plugins = {
         setup = function() mappings.maximizer() end
     },
     {
-        'sainnhe/gruvbox-material',
+        'EdenEast/nightfox.nvim',
+        as = 'colorscheme',
         config = function() require('plugins.config.colorscheme') end
     },
     {
         "kyazdani42/nvim-web-devicons",
-        after = "gruvbox-material"},
+        after = "colorscheme"},
     {
         'nvim-lualine/lualine.nvim',
         after = "nvim-web-devicons",
@@ -244,7 +245,8 @@ local plugins = {
     },
     {
         'vimwiki/vimwiki',
-        config = function()
+        setup = function()
+            mappings.vimwiki()
             vim.cmd([[ let g:vimwiki_list = [{'path': '~/vimwiki', 'diary_rel_path': '', 'syntax': 'markdown', 'ext': '.md'}] ]])
         end
     },
