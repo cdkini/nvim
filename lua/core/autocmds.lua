@@ -4,8 +4,5 @@ vim.cmd [[ au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearc
 -- Remove whitespace on save
 vim.cmd [[ au BufWritePre * :%s/\s\+$//e ]]
 
--- Don't auto commenting new lines
+-- Don't auto comment new lines
 vim.cmd [[ au BufEnter * set fo-=c fo-=r fo-=o]]
-
--- Format on save
-vim.cmd [[ au BufWritePre * lua vim.lsp.buf.formatting() ]]

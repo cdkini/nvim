@@ -2,7 +2,7 @@ vim.opt.autoindent = true -- Aids with autoindenting
 vim.opt.backup = false -- Backup files
 vim.opt.bg = 'dark' -- Color scheme
 vim.opt.clipboard = 'unnamedplus' -- Copy paste between nvim and everything else
-vim.opt.cmdheight = 1 -- Give more space for displaying messages
+vim.opt.cmdheight = 0 -- Give more space for displaying messages
 vim.opt.colorcolumn = '88' -- Sets ruler
 vim.opt.completeopt = {'menuone', 'noinsert', 'noselect'} -- nvim LSP
 vim.opt.cursorline = true -- Highlight current line
@@ -33,12 +33,3 @@ vim.opt.undodir = '/Users/cdkini/.config/nvim/.undodir' -- Write undofiles to di
 vim.opt.undofile = true -- Enable undofiles
 vim.opt.updatetime = 100 -- Faster completion
 vim.opt.wrap = false -- Display long lines as just one line
-
-local disabled_built_ins = {
-    "2html_plugin", "getscript", "getscriptPlugin", "gzip", "logipat",
-    "netrwPlugin", "netrwSettings", "netrwFileHandlers", "matchit", "tar",
-    "tarPlugin", "rrhelper", "spellfile_plugin", "vimball", "vimballPlugin",
-    "zip", "zipPlugin"
-}
-
-for _, plugin in pairs(disabled_built_ins) do vim.g["loaded_" .. plugin] = 1 end

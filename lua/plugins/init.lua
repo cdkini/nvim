@@ -157,11 +157,6 @@ local plugins = {
         config = function() require('plugins.config.lspconfig') end
     },
     {
-        "ray-x/lsp_signature.nvim",
-        after = "nvim-lspconfig",
-        config = function() require('plugins.config.lsp_signature') end
-    },
-    {
         "andymass/vim-matchup",
         opt = true,
         setup = function() packer_lazy_load "vim-matchup" end
@@ -238,17 +233,14 @@ local plugins = {
         config = function() require('plugins.config.which-key') end
     },
     {
-        'danymat/neogen',
-        cmd = "Neogen",
-        setup = function() mappings.neogen() end,
-        config = function() require('neogen').setup() end
-    },
-    {
         'vimwiki/vimwiki',
         setup = function()
-            mappings.vimwiki()
             vim.cmd([[ let g:vimwiki_list = [{'path': '~/vimwiki', 'diary_rel_path': '', 'syntax': 'markdown', 'ext': '.md'}] ]])
         end
+    },
+    {
+        'williamboman/mason.nvim',
+        setup = function() require("mason").setup() end
     },
 }
 

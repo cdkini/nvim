@@ -34,9 +34,9 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
   -- vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
-  vim.cmd("nnoremap <silent> [d <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>")
-  vim.cmd("nnoremap <silent> ]d <cmd>lua vim.lsp.diagnostic.goto_next()<CR>")
-  vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
+  vim.cmd("nnoremap <silent> [d <cmd>lua vim.diagnostic.goto_prev()<CR>")
+  vim.cmd("nnoremap <silent> ]d <cmd>lua vim.diagnostic.goto_next()<CR>")
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
 -- nvim-cmp supports additional completion capabilities
@@ -44,23 +44,10 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver', 'gopls', 'rust_analyzer', 'efm' }
+local servers = { 'pyright', 'tsserver', 'gopls', 'rust_analyzer', 'ccls', 'bashls' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
   }
 end
-
-require "lspconfig".efm.setup {
-    init_options = {documentFormatting = true},
-    settings = {
-        rootMarkers = {".git/"},
-        languages = {
-            python = {
-                {formatCommand = "isort --quiet -", formatStdin = true},
-                {formatCommand = "black --quiet -", formatStdin = true}
-            }
-        }
-    }
-}

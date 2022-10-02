@@ -34,12 +34,6 @@ M.core = function()
     vim.api.nvim_set_keymap('n', '<C-k>', ':call WinMove("k")<CR>', opts)
     vim.api.nvim_set_keymap('n', '<C-l>', ':call WinMove("l")<CR>', opts)
 
-    -- Resize with arrows
-    vim.api.nvim_set_keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-    vim.api.nvim_set_keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-    vim.api.nvim_set_keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-    vim.api.nvim_set_keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
-
     -- cd to current buffer
     vim.api.nvim_set_keymap('n', '<leader>cd', ':cd %:p:h<CR>:pwd<CR>', opts)
 
@@ -121,15 +115,5 @@ end
 M.trouble = function()
     vim.api.nvim_set_keymap("n", "<leader>d", "<cmd>Trouble document_diagnostics<cr>", opts)
 end
-
-M.neogen = function()
-    vim.api.nvim_set_keymap('n', '<leader>af', '<cmd>Neogen func<CR>', opts)
-    vim.api.nvim_set_keymap('n', '<leader>ac', '<cmd>Neogen class<CR>', opts)
-end
-
-M.vimwiki = function()
-    vim.api.nvim_set_keymap('n', '<leader>wt', '<cmd>VimwikiMakeDiaryNote<CR>', opts)
-end
-
 
 return M
