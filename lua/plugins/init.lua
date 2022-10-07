@@ -238,10 +238,6 @@ local plugins = {
             vim.cmd([[ let g:vimwiki_list = [{'path': '~/vimwiki', 'diary_rel_path': '', 'syntax': 'markdown', 'ext': '.md'}] ]])
         end
     },
-    {
-        'williamboman/mason.nvim',
-        setup = function() require("mason").setup() end
-    },
 }
 
 return packer.startup(function(use)
