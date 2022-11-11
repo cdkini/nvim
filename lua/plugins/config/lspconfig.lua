@@ -51,3 +51,23 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+-- Will try to use pylsp but for now pyright + efm seems to work (minus mypy)
+lspconfig["efm"].setup {
+    on_attach = on_attach,
+    init_options = {documentFormatting = true},
+    logLevel = 5,
+    settings = {
+        rootMarkers = {".git/"},
+        languages = {
+            lua = {
+                {formatCommand = "lua-format -i", formatStdin = true}
+            },
+            python = {
+                {formatCommand = "isort -", formatStdin = true},
+                {formatCommand = "black --quiet -", formatStdin = true},
+            },
+        }
+    }
+
+}
