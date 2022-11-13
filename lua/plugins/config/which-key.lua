@@ -81,14 +81,6 @@ local mappings = {
     r = 'Resume',
     ['/'] = 'Current file',
   },
-  t = {
-    name = 'Test',
-    c = 'Clear',
-    f = 'File',
-    l = 'Last',
-    s = 'Summary',
-    t = 'Test'
-  },
   v = {
     name = 'Vim',
     c = { 'Compile' },

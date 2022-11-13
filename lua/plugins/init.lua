@@ -233,6 +233,11 @@ local plugins = {
         config = function() require('plugins.config.which-key') end
     },
     {
+        "rcarriga/nvim-dap-ui",
+        requires = {"mfussenegger/nvim-dap", "mfussenegger/nvim-dap-python"},
+        config = function() require('plugins.config.dap') end
+    },
+    {
         'vimwiki/vimwiki',
         setup = function()
             vim.cmd([[ let g:vimwiki_list = [{'path': '~/vimwiki', 'diary_rel_path': '', 'syntax': 'markdown', 'ext': '.md'}] ]])

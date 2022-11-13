@@ -44,30 +44,11 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver', 'gopls', 'rust_analyzer', 'ccls', 'bashls' }
+-- efm config is found in ~/.config/efm-langserver/config.yaml
+local servers = { 'efm', 'pyright', 'tsserver', 'gopls', 'rust_analyzer', 'ccls', 'bashls' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
   }
 end
-
--- Will try to use pylsp but for now pyright + efm seems to work (minus mypy)
-lspconfig["efm"].setup {
-    on_attach = on_attach,
-    init_options = {documentFormatting = true},
-    logLevel = 5,
-    settings = {
-        rootMarkers = {".git/"},
-        languages = {
-            lua = {
-                {formatCommand = "lua-format -i", formatStdin = true}
-            },
-            python = {
-                {formatCommand = "isort -", formatStdin = true},
-                {formatCommand = "black --quiet -", formatStdin = true},
-            },
-        }
-    }
-
-}
